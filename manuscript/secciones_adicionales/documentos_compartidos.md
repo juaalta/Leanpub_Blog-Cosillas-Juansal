@@ -1,0 +1,22 @@
+## Documentos Compartidos {#secciones_adicionales_03}
+
+En esta página iré añadiendo documentos que yo cree o que considere interesantes.
+
+### Plantillas creadas en Google Drive
+
+[Plantilla de Pedidos pendientes recepcion](https://drive.google.com/previewtemplate?id=0AtdXTcBP8chbdEhKZWFVWS14XzhLNVhHX0FTTDhMdUE&mode=public)
+
+[Plantilla de Nombres en juegos online](https://drive.google.com/previewtemplate?id=0AtdXTcBP8chbdFhsWG9DUXYtOWRoMGNmQ2ZrU3NzWHc&mode=public)
+
+[Plantilla de Seguimiento de patrocinadores](https://drive.google.com/previewtemplate?id=0AtdXTcBP8chbdFBmWjBGVmwwXzFLZjVJb3FqWkFCVVE&mode=public)
+
+
+### Documentos publicados en Gitbook
+
+[Blog Cosillas de Juansal](http://juaalta.gitbooks.io/blog-cosillas-de-juansal/)
+
+[La máquina arcade de Juansal](http://juaalta.gitbooks.io/construccion-de-maquina-recreativa/)
+
+### Documentos publicados en Leanpub
+
+[La máquina arcade de Juansal](https://leanpub.com/lamquinaarcadedejuansal/)
