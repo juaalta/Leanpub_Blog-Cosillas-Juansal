@@ -48,6 +48,7 @@ mainmatter:
 2015/construccion_de_maquina_recreativa_-_los_controles.md
 2015/construccion_de_maquina_recreativa_-_el_sonido.md
 2015/construccion_de_maquina_recreativa_-_agradecimientos.md
+2015/sistema_de_apertura_de_un_escaparate_con_arduino.md
 secciones_adicionales/README.md
 secciones_adicionales/links_interesantes.md
 secciones_adicionales/plugins_de_firefox.md
