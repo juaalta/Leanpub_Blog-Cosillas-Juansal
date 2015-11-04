@@ -59,6 +59,7 @@ Imágenes del sistema montado dentro del laboratorio:
 Para comprobar la dirección I2C del bloque de relés se ha usado el programa llamado [Arduino I2c Scanner](http://todbot.com/blog/2009/11/29/i2cscanner-pde-arduino-as-i2c-bus-scanner/).
 
 Las librerías usadas han sido:
+
 * [I2C_RL8xxM](http://whatsbroken.com.au/arduino-i2c-relays/i2c_rl8xxm/): librería usada para acceder al bloque de relés.
 * Wire: librería usada para las conexiones I2C y dependencia de la librería I2C_RL8xxM.
 * [keypad](http://www.arduino.cc/playground/uploads/Code/Keypad.zip): librería usada para la gestión del teclado 4x3.

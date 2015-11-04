@@ -1,5 +1,5 @@
 {:: encoding="utf-8" /}
-## Información sobre temperatura y discos duros en la cubietruck (cubieboard 3) {#2014_03}
+## Información sobre temperatura y discos duros en la cubietruck \(cubieboard 3\) {#2014_03}
 
 ### Obtención de la temperatura de la cubietruck:
 
