@@ -12,8 +12,9 @@ cat /sys/devices/platform/sunxi-i2c.0/i2c-0/0-0034/temp1_input | awk '{ printf (
 
 La ejecución del script que se acaba de crear es la siguiente:
 
-    CPU Temperature = 52.2°C
-
+```
+CPU Temperature = 52.2°C
+```
 
 
 ### Información de los discos:
@@ -69,6 +70,7 @@ Para obtener la información de los discos se puede utilizar el paquete hddtemp:
 ``` bash
 apt-get install hddtemp
 ```
+
 Cuando pregunte si se quiere dejar como demonio he dicho que no.
 
 Para obtener la información de la temperatura:
@@ -76,11 +78,12 @@ Para obtener la información de la temperatura:
 ``` bash
 hddtemp /dev/sda
 ```
+
 Se obtiene una salida similar a:
 
-    /dev/sda: WDC WD10JPVX-22JC3T0: 55°C
-
-
+```
+/dev/sda: WDC WD10JPVX-22JC3T0: 55°C
+```
 
 
 ## Información obtenida de:

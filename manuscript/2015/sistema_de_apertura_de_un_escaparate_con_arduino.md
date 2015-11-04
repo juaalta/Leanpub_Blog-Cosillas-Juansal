@@ -18,12 +18,13 @@ Los requerimientos son los siguientes:
 #### Componentes usados
 
 Los componentes usados han sido:
+
 - [Fuente de alimentación de 12V y 30A](http://www.kitprinter3d.com/es/electronica/99-fuente-de-alimentacion-conmutada-12v-30a.html)
 - [Arduino nano v 3.0 5v](http://www.ebay.es/itm/311064700128?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
 - [Reductor voltaje LM2596s](http://www.aliexpress.com/item/10pcslot-LM2596s-DC-DC-step-down-power-supply-module-3A-adjustable-step-down-module-LM2596-voltage/1289330336.html)
 - [Bloque relés I2C 12v 10A](http://www.ereshop.com/shop/relays-c-143_178/i2c-bus-high-current-relay-12v-pcf8574-p-739.html)
 - [Teclado 4 x 3](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=68_185&products_id=803&zenid=bad04c23e16790298fa3003dd156a414)
-- [Placa PCB 9x15 mm](chttp://es.aliexpress.com/item/5pcs-9-15-cm-Printed-Circuit-Board-9X15-cm-Universal-PCB-Board-Double-Sided-Prototype-PCB/32254187154.html?adminSeq=221739572&shopNumber=1403485)
+- [Placa PCB 9x15 mm](http://es.aliexpress.com/item/5pcs-9-15-cm-Printed-Circuit-Board-9X15-cm-Universal-PCB-Board-Double-Sided-Prototype-PCB/32254187154.html?adminSeq=221739572&shopNumber=1403485)
 - [4-pin 2.00mm connector](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=177&products_id=798&zenid=bad04c23e16790298fa3003dd156a414)
 - [4W 2.00mm 4F/4F 6"](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=173&products_id=743&zenid=bad04c23e16790298fa3003dd156a414)
 - 2 resistencias de 10K
@@ -42,6 +43,7 @@ La fuente de alimentación se ha elegido de 30A porque cada uno de los cerrojos 
 El móldulo LM2596s ha sido usado para reducir el voltaje de entrada a el arduino de 12V a 6V.
 
 Imágenes del sistema montado dentro del laboratorio:
+
 ![Detalle superior de la placa montada](images/Galeria_01.JPG	)
 
 ![Detalle inferior de la placa montada](images/Galeria_02.JPG)
