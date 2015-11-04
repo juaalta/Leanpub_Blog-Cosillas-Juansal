@@ -11,7 +11,7 @@ Los requerimientos son los siguientes:
 - El tiempo durante el cual los cerrojos deben de estar abiertos es de 1 minuto.
 - Hay 3 cerrojos por escaparate.
 
-![Escaparate](http://2.bp.blogspot.com/-yQSxBfMhVWo/VjpDBZYuZCI/AAAAAAAAIjo/9UT0pmftEhI/s640/IMG-20150816-WA0000.jpg)
+![Escaparate](images/IMG-20150816-WA0000.jpg)
 
 ### Instrucciones
 
@@ -28,34 +28,29 @@ Los componentes usados han sido:
 - [4W 2.00mm 4F/4F 6"](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=173&products_id=743&zenid=bad04c23e16790298fa3003dd156a414)
 - 2 resistencias de 10K
 - [Cerrojo](http://es.aliexpress.com/wholesale?catId=0&initiative_id=SB_20151102121134&SearchText=solenoid+door+lock+12v+0.8a)
-![Cerrojo](http://3.bp.blogspot.com/-BN7xqNq8jPg/VjfsdtBr4gI/AAAAAAAAIhU/Ja4wwzIQeTU/s1600/Cerrojo.jpg)
+![Cerrojo](images/Cerrojo.jpg)
 
 
 #### Montaje del circuito
 
 El esquema en Fritzing es el siguiente:
 
-![Esquema usando Fritzing](http://2.bp.blogspot.com/-an4ueaW0ijM/VjfsxDAD7vI/AAAAAAAAIiE/e0gCHmvi5YQ/s640/Vitrinas_tienda_bb.png)
+![Esquema usando Fritzing](images/Vitrinas_tienda_bb.png)
 
 Como puede observarse en las siguientes imágenes ha sido montado sobre una placa pcb de 9x15.
 La fuente de alimentación se ha elegido de 30A porque cada uno de los cerrojos usa 900 mA y hay 24 de estos.
 El móldulo LM2596s ha sido usado para reducir el voltaje de entrada a el arduino de 12V a 6V.
 
 Imágenes del sistema montado dentro del laboratorio:
-![Galeria_01](http://3.bp.blogspot.com/-jHNESovI08I/VjfwUrNYWNI/AAAAAAAAIiQ/84egZX0OU9U/s1600/Galeria_01.JPG	)
-> Detalle superior de la placa montada.
+![Detalle superior de la placa montada](images/Galeria_01.JPG	)
 
-![Galeria_02](http://1.bp.blogspot.com/-Od3bZ6EY8Nk/Vjfsi5CPZYI/AAAAAAAAIhk/oN1-IBPpUQk/s1600/Galeria_02.JPG)
-> Detalle inferior de la placa montada.
+![Detalle inferior de la placa montada](images/Galeria_02.JPG)
 
-![Galeria_03](http://4.bp.blogspot.com/-xV78gYg5DSQ/VjfsoyCdLvI/AAAAAAAAIhs/4cDDSU7bk0E/s640/Galeria_03.jpg)
-> Teclado y bloque de relés.
+![Teclado y bloque de relés](images/Galeria_03.jpg)
 
-![Galeria_04](http://3.bp.blogspot.com/-Y7bq4bozEIM/VjfswUYcbjI/AAAAAAAAIiA/pVeACXzDGEg/s640/Galeria_04.JPG)
-> Conexión del bloque de relés.
+![Conexión del bloque de relés](images/Galeria_04.JPG)
 
-![Galeria_05](http://2.bp.blogspot.com/-hMKl_t_nhzM/VjfsuBl-9QI/AAAAAAAAIh0/mgNQPhQgsCA/s640/Galeria_05.JPG)
-> Sistema completo.
+![Sistema completo](images/Galeria_05.JPG)
 
 #### Software
 

@@ -4,6 +4,7 @@
 ### Obtención de la temperatura de la cubietruck:
 
 Se ha de crear un script que contenga el siguiente código:
+
 ``` bash
 #!/bin/bash
 cat /sys/devices/platform/sunxi-i2c.0/i2c-0/0-0034/temp1_input | awk '{ printf ("CPU Temperature = %0.1f°C\n",$1/1000); }'
@@ -18,12 +19,15 @@ La ejecución del script que se acaba de crear es la siguiente:
 ### Información de los discos:
 
 #### smartmontools
+
 Para obtener la información de los discos se puede utiliar el paquete smartmontools:
+
 ``` bash
 apt-get install smartmontools
 ```
 
 Para obtener la información de la unidad sda1:
+
 ``` bash
 smartctl -A /dev/sda
 ```
@@ -59,13 +63,16 @@ ID## ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN
 ```
 
 #### hddtemp
+
 Para obtener la información de los discos se puede utilizar el paquete hddtemp:
+
 ``` bash
 apt-get install hddtemp
 ```
 Cuando pregunte si se quiere dejar como demonio he dicho que no.
 
 Para obtener la información de la temperatura:
+
 ``` bash
 hddtemp /dev/sda
 ```

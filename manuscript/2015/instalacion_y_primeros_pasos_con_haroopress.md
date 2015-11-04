@@ -1,6 +1,8 @@
 {:: encoding="utf-8" /}
 ## Instalación y primeros pasos con Haroopress {#2015_04}
+
 Como dicen en su github:
+
 ```
  A static site generator built with Node.js, "Haroo" means "a day" Support Markdown presentation, Syntax Highlight, Themes
 ```
@@ -34,7 +36,9 @@ yum install git
 Los pasos que he seguido para la instalación han sido los siguientes:
 
 #### Obtención del programa:
+
 Los comandos ejecutados han sido:
+
 ``` bash
 mkdir haroopress_test
 git clone https://github.com/rhiokim/haroopress.git haroopress_test
@@ -52,7 +56,9 @@ Checking connectivity... done.
 ```
 
 #### Inicialización del sitio web:
+
 Los comandos ejecutados han sido:
+
 ``` bash
 cd haroopress_test
 
@@ -530,6 +536,7 @@ origin	https://github.com/juaalta/juaalta.github.io.git (push)
 Durante la ejecución del comando se nos pide la ruta de github en la que se subirá el repositorio.
 
 ##### Generar las páginas estáticas
+
 ``` bash
 make gen
 ```
@@ -586,6 +593,7 @@ cp -R ./lib/bootstrap/* ./_public
 ```
 
 ##### Previsualizar en local la web generada
+
 ``` bash
 make preview
 ```
@@ -724,6 +732,7 @@ haroo> open http://juaalta.github.io ? [y/n]          y
 #### Comandos de generación de contenido
 
 ##### Crear un artículo
+
 ``` bash
 make new-post
 ```
@@ -771,6 +780,7 @@ Nuestro artículo en Markdown ha de empezar en la línea en la que se encuentra 
 Mientras la variable `status` contenga el valor **draft**, este artículo no se publicará. Para que se publique se ha de cambiar el valor a **publish**.
 
 ##### Crear una página
+
 ``` bash
 make new-page
 ```
@@ -823,6 +833,7 @@ Mientras la variable `status` contenga el valor **draft**, este artículo no se 
 
 
 ##### Crear un pase de diapositivas
+
 ``` bash
 make new-slide
 ```
@@ -844,6 +855,7 @@ Para modificar la presentación se ha de modificar el fichero que se indica en l
 Las imágenes a añadir a la presentación han de guardarse dentro de la carpeta que se indica en la línea `slide's image path`, en nuestro caso es `/home/juansal/haroopress/haroopress_test/source/data/slides/slide-test-1/@img`.
 
 El contenido de una presentación vacía es:
+
 ```
 {
     "title": "Slide Test 1",

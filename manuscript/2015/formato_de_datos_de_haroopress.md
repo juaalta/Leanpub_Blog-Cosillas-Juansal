@@ -6,6 +6,7 @@
 Los ficheros de autores y contenido (Artículos, Páginas y Presentaciones) estan compuestos por una cabecera en JSON y un contenido en Markdown.
 
 La estructura básica del fichero es:
+
 ``` json
 {
    Encabezamiento, es fijo por tipo de fichero.
@@ -30,6 +31,7 @@ Se encuentran en el directorio `./source/data/authors`. Hay un fichero con mobre
 Para borrar un autor primero se han de borrar todos los elementos que estén relacionados con el.
 
 ##### Estructura del fichero
+
 La estructura del fichero es la siguiente:
 
 ``` json
@@ -91,6 +93,7 @@ Dentro de este directorio se encuentran los siguientes elementos:
 * Fichero **index.markdown**, que contendrá el contenido de la página.
 
 ##### Estructura del fichero
+
 La estructura del fichero es la siguiente:
 
 ``` json
@@ -126,6 +129,7 @@ Dentro de este directorio se encuentran los siguientes elementos:
 * Fichero **index.markdown**, que contendrá el contenido de la presentación.
 
 ##### Estructura del fichero
+
 La estructura del fichero es la siguiente:
 
 ``` json
