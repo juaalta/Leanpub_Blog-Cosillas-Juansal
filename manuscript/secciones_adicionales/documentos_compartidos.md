@@ -19,4 +19,14 @@ En esta página iré añadiendo documentos que yo cree o que considere interesan
 
 ### Documentos publicados en Leanpub
 
+[Blog Cosillas de Juansal](https://leanpub.com/blogcosillasdejuansal)
+
 [La máquina arcade de Juansal](https://leanpub.com/lamquinaarcadedejuansal/)
+
+### Documentos publicados en Instructables
+
+[Sistema de apertura de un escaparate con arduino](http://www.instructables.com/id/Sistema-de-apertura-de-un-escaparate-con-arduino/)
+
+### Proyectos arduino publicados en codebender
+
+[Sistema de apertura de un escaparate con arduino](https://codebender.cc/sketch:178358)

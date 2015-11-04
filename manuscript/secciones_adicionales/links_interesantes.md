@@ -23,6 +23,10 @@
 
 [Leanpub](https://leanpub.com/u/juansalvadoraleixandretalens)
 
+[Instructables](http://www.instructables.com/member/juaalta/)
+
+[codebender](https://codebender.cc/user/juaalta)
+
 
 ### Webs y blogs en los que colaboro:
 

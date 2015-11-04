@@ -7,4 +7,4 @@ En este capítulo voy a introducir todas las páginas/secciones del blog que no 
 | [Links Interesantes](#secciones_adicionales_01) | http://blog.juansal.com/p/links-interesantes.html |
 | [Plugins de Firefox](#secciones_adicionales_02)  | http://blog.juansal.com/p/plugins-de-firefox.html |
 | [Documentos Compartidos](#secciones_adicionales_03) | http://blog.juansal.com/p/documentos-compartidos.html |
-|[Proyectos](#secciones_adicionales_04) | http://blog.juansal.com/p/proyectos.html |
+| [Proyectos](#secciones_adicionales_04) | http://blog.juansal.com/p/proyectos.html |

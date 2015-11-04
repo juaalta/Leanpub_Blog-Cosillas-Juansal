@@ -3,7 +3,7 @@
 En esta página iré añadiendo todos los proyectos que vaya realizando, de esta forma podrán ser encontrados más facilmente dentro del blog.
 
 ### Arduino
-Próximamente.
+[Sistema de apertura de un escaparate con arduino](http://blog.juansal.com/2015/11/sistema-de-apertura-de-un-escaparate.html)
 
 ### Máquina recreativa
 #### Documento separado por capítulos
