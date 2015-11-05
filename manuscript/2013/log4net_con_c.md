@@ -1,5 +1,5 @@
 {:: encoding="utf-8" /}
-## Log4net con C# {#2013_01}
+## Log4net con C\# {#2013_01}
 
 Para poder utilizar el Log4net en una aplicación de C# se han de seguir los siguientes pasos.
 
@@ -23,6 +23,7 @@ private readonly ILog LogPagina = LogManager.GetLogger(System.Reflection.MethodB
 
 
 Por cada salida de log realizar la siguiente llamada:
+
 ``` cs
 LogPagina.debug(texto_a_sacar_por_log);
 LogPagina.info(texto_a_sacar_por_log);
@@ -44,6 +45,7 @@ LogPagina.fatal(texto_a_sacar_por_log, excepción);
 
 
 El fichero de configuración del Log4Net ha de llamarse `Configuracion.log4net` y ha de estar situado en la raiz del proyecto.
+
 ``` xml
 <?xml version="1.0" encoding="utf-8" ?>
 

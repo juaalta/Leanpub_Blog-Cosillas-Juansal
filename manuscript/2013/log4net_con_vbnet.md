@@ -1,6 +1,5 @@
 {:: encoding="utf-8" /}
-
-## Log4net con VB.NET   {#2013_02}
+## Log4net con VB_NET {#2013_02}
 
 Para poder utilizar el Log4net en una aplicación de VB.NET se han de seguir los siguientes pasos.
 

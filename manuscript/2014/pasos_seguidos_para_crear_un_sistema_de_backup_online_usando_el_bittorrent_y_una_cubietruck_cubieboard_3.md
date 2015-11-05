@@ -1,5 +1,5 @@
 {:: encoding="utf-8" /}
-## Pasos seguidos para crear un sistema de backup online usando el BitTorrent y una Cubietruck (Cubieboard 3) {#2014_02}
+## Pasos seguidos para crear un sistema de backup online usando el BitTorrent y una Cubietruck \(Cubieboard 3\) {#2014_02}
 
 ### Consideraciones iniciales sobre el documento
 
@@ -20,38 +20,46 @@ El sistema operativo sobre el que se han realizado las acciones siguientes ha si
 Los pasos seguidos han sido los siguientes:
 
 * Asignación de la ruta en la que está la tarjeta a una variable del sistema
+
 ``` bash
 card=/dev/sdb
 ```
 
 * Limpieza de la tarjeta SD:
+
 ``` bash
 sudo dd if=/dev/zero of=${card} bs=1024 seek=544 count=128
 ```
 
 * Hacer la tarjeta SD arrancable:
+
 ``` bash
 sudo dd if=u-boot-sunxi-with-spl-ct-20131102.bin of=$card bs=1024 seek=8
 ```
 
 * Particionado de la tarjeta SD: Esta se ha de particionar en 2 particiones, la primera de 64Mb. (2048 sectores) y la segunda del resto del tamaño. Ejemplo de como se queda:
+
 ``` bash
  Device Boot      Start         End      Blocks   Id  System
 /dev/sdb1            2048      133119       65536   83  Linux
 /dev/sdb2          133120    15278079     7572480   83  Linux
 ```
+
 Para poder realizar la modificación de la partición se ha usado el comando siguiente:
+
 ``` bash
 sudo fdisk $card
 ```
 
 * Formateado de las particiones creadas:
+
 ``` bash
 sudo mkfs.ext2 ${card}1
 sudo mkfs.ext4 ${card}2
 ```
 
 * Copiado de los datos a la tarjeta SD:
+
 ``` bash
 mkdir /tmp/sdb1 /tmp/sdb2
 sudo mount -t ext2 ${card}1 /tmp/sdb1
@@ -68,9 +76,11 @@ sudo umount /tmp/sdb2
 ##### Configuración del teclado en español:
 
 Para esto ejecutamos el siguiente comando:
+
 ``` bash
 sudo dpkg-reconfigure keyboard-configuration
 ```
+
 Este comando se encarga de lanzar la aplicación de reconfiguración del teclado.
 Seleccionamos **Generic 105 key (Intl PC)**, el idioma **Spanish** y luego las opciones predeterminadas con **OK**.
 
@@ -81,9 +91,11 @@ En mi caso no la he tocado, ya que uso el DHCP, que es la configuración que vie
 ##### Configuración de la zona horaria:
 
 Para esto ejecutamos el siguiente comando:
+
 ``` bash
 sudo dpkg-reconfigure tzdata
 ```
+
 Este comando se encarga de lanzar la aplicación de reconfiguración de la zona horaria.
 Seleccionamos la zona geográfica **Europe** y la zona horaria **Madrid**.
 
@@ -97,6 +109,7 @@ sudo nano/etc/hosts
 ```
 
 Y añadiremos la siguiente línea, donde *cubieboard* es el nombre que le asignaremos:
+
 ```
 127.0.0.1 cubieboard
 ```
@@ -106,6 +119,7 @@ Y añadiremos la siguiente línea, donde *cubieboard* es el nombre que le asigna
 En mi caso el disco duro es **/dev/sda1**.
 El disco duro se va a montar sobre la carpeta **/media/hdd**.
 Para montar el disco duro y que la configuración se guarde entre arranques del sistema operativo se ha de modificar el fichero **/etc/fstab**. Para ello añadiremos la siguiente línea a dicho fichero.
+
 ```
 /dev/sda1 /media/hdd ext4 defaults 0 2
 ```
@@ -115,6 +129,7 @@ Para montar el disco duro y que la configuración se guarde entre arranques del 
 ### Consideraciones iniciales
 
 Las consideraciones inciales son las siguientes:
+
 * El BitTorrent Sync lo descargo dentro de la carpeta **/home/linaro/Downloads/** y se descomprime dentro de **/home/linaro/Downloads/btsync**.
 * El binario lo dejo dentro de la carpeta **/usr/local/bin/**.
 * La configuración del programa está en el fichero **/etc/btsync/btsync.conf**.
@@ -124,6 +139,7 @@ Las consideraciones inciales son las siguientes:
 ### Proceso de instalación
 
 * Descarga del Bittorrent Sync.
+
 ``` bash
 wget http://download-new.utorrent.com/endpoint/btsync/os/linux-arm/track/stable
 mkdir btsync
@@ -132,20 +148,26 @@ tar zxvf btsync_arm.tar.gz -C btsync
 ```
 
 * Creamos variables del sistema para ayudarnos en la creación
+
 ``` bash
 config="/etc/btsync/btsync.conf"
 user="root"
 ```
 
 * Comando a ejecutar para que el programa arranque, en mi caso ha hecho falta, aunque no siempre es preciso. Este paso consiste en linkar el nombre de una librería, para que el programa pueda encontrarla. Esto es necesario para cuando se lance el comando del punto siguiente y este de un error.
+
 ``` bash
 ln -s /lib/arm-linux-gnueabihf/ld-linux.so.3 /lib/ld-linux.so.3
 ```
 
 * Extracción del fichero de configuración por defecto.
+
+``` bash
 btsync --dump-sample-config > $config
+```
 
 * Reconfiguración del fichero de configuración por defecto. Para ello se lanzan los siguientes comandos.
+
 ``` bash
 sed -i 's/"device_name"\s*:\s*"My Sync Device"/"device_name": "CUBIEBOARD"/g' $config
 sed -i 's/"storage_path"\s*:\s*"\/home\/user\/\.sync"/"storage_path": "\/media\/hdd\/btsync"/g' $config
@@ -153,15 +175,18 @@ sed -i 's/"login"\s*:\s*"admin",//g' $config
 sed -i 's/"password"\s*:\s*"password"//g' $config
 sed -i 's/:8888",/:8888"/g' $config
 ```
+
 Como puede observarse se han cambiado los parámetros *device_name*, *storage_path*, *login* y *password*. Los comandos anteriores tambien pueden cambiarse por un simple `nano $config` y cambiar los parámetros de forma manual. De todas formas es recomandable lanzar este último parámetro para revisar la configuración y ver si se quiere cambiar algún parámetro más.
 
 * Creación del script de arranque automático.
+
 ``` bash
 mkdir /var/run/btsync/
 nano /etc/init.d/btsync
 ```
 
 El contenido del fichero `/etc/init.d/btsync` es el siguiente:
+
 ``` bash
 #! /bin/sh
 #### BEGIN INIT INFO
@@ -252,6 +277,7 @@ exit 0
 ```
 
 * Arranque del programa
+
 ``` bash
 chmod +x /etc/init.d/btsync
 update-rc.d btsync defaults
