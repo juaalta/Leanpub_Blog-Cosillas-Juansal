@@ -1,5 +1,5 @@
 {:: encoding="utf-8" /}
-## Web con información sobre temperatura y discos duros en la cubietruck (cubieboard 3) {#2015_06}
+## Web con información sobre temperatura y discos duros en la cubietruck - cubieboard 3 {#2015_06}
 
 ### Finalidad del artículo
 
