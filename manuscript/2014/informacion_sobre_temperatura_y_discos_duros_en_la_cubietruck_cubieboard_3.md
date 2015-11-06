@@ -87,7 +87,7 @@ Se obtiene una salida similar a:
 ```
 
 
-## Información obtenida de:
+### Información obtenida de:
 
 [Información temperatura y discos duros](http://www.cubieforums.com/index.php/topic,2004.0.html)
 

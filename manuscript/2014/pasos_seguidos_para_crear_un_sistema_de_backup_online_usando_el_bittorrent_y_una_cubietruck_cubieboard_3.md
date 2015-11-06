@@ -306,7 +306,7 @@ cp ./btsync/btsync /usr/local/bin/
 service btsync start
 ```
 
-## Información obtenida de:
+### Información obtenida de:
 
 [Instalación del linux en la SD](http://docs.cubieboard.org/tutorials/ct1/installation/install_lubuntu_desktop_server_to_sd_card)
 
