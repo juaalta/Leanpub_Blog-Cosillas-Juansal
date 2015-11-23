@@ -22,11 +22,11 @@ En esta página iré añadiendo todos los proyectos que vaya realizando, de esta
 
 [Construcción de máquina recreativa - Mueble - Bezel](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_17.html)
 
-[Construcción de máquina recreativa - El Vídeo](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_18.html)
+[Construcción de máquina recreativa - El Vídeo](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa-el.html)
 
-[Construcción de máquina recreativa - Los Controles](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_19.html)
+[Construcción de máquina recreativa - Los Controles](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa-los.html)
 
-[Construcción de máquina recreativa - El Sonido](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_20.html)
+[Construcción de máquina recreativa - El Sonido](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa-el_20.html)
 
 [Construcción de máquina recreativa - Agradecimientos](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_21.html)
 
