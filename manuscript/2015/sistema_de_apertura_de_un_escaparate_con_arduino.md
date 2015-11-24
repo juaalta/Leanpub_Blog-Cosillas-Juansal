@@ -11,7 +11,7 @@ Los requerimientos son los siguientes:
 - El tiempo durante el cual los cerrojos deben de estar abiertos es de 1 minuto.
 - Hay 3 cerrojos por escaparate.
 
-![Escaparate](images/IMG-20150816-WA0000.jpg)
+![Escaparate](images/vitrinas_tienda/IMG-20150816-WA0000.jpg)
 
 ### Instrucciones
 
@@ -30,14 +30,14 @@ Los componentes usados han sido:
 - 2 resistencias de 10K
 - [Cerrojo](http://es.aliexpress.com/wholesale?catId=0&initiative_id=SB_20151102121134&SearchText=solenoid+door+lock+12v+0.8a)
 
-![Cerrojo](images/Cerrojo.jpg)
+![Cerrojo](images/vitrinas_tienda/Cerrojo.jpg)
 
 
 #### Montaje del circuito
 
 El esquema en Fritzing es el siguiente:
 
-![Esquema usando Fritzing](images/Vitrinas_tienda_bb.png)
+![Esquema usando Fritzing](images/vitrinas_tienda/Vitrinas_tienda_bb.png)
 
 Como puede observarse en las siguientes imágenes ha sido montado sobre una placa pcb de 9x15.
 La fuente de alimentación se ha elegido de 30A porque cada uno de los cerrojos usa 900 mA y hay 24 de estos.
@@ -45,15 +45,15 @@ El móldulo LM2596s ha sido usado para reducir el voltaje de entrada a el arduin
 
 Imágenes del sistema montado dentro del laboratorio:
 
-![Detalle superior de la placa montada](images/Galeria_01.JPG	)
+![Detalle superior de la placa montada](images/vitrinas_tienda/Galeria_01.JPG	)
 
-![Detalle inferior de la placa montada](images/Galeria_02.JPG)
+![Detalle inferior de la placa montada](images/vitrinas_tienda/Galeria_02.JPG)
 
-![Teclado y bloque de relés](images/Galeria_03.jpg)
+![Teclado y bloque de relés](images/vitrinas_tienda/Galeria_03.jpg)
 
-![Conexión del bloque de relés](images/Galeria_04.JPG)
+![Conexión del bloque de relés](images/vitrinas_tienda/Galeria_04.JPG)
 
-![Sistema completo](images/Galeria_05.JPG)
+![Sistema completo](images/vitrinas_tienda/Galeria_05.JPG)
 
 #### Software
 

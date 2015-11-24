@@ -5,6 +5,6 @@ La ventilación se encuentra en la parte superior trasera y está formada por 2 
 
 Para la entrada de corriente he usado una muy parecida a la original de la máquina.
 
-![Exterior entrada alimentación y ventilación](images/Mueble_12.jpg "Exterior entrada alimentación y ventilación")
+![Exterior entrada alimentación y ventilación](images/recreativa/Mueble_12.jpg "Exterior entrada alimentación y ventilación")
 
-![Interior entrada alimentación y ventilación](images/Mueble_13.jpg "Interior entrada alimentación y ventilación")
+![Interior entrada alimentación y ventilación](images/recreativa/Mueble_13.jpg "Interior entrada alimentación y ventilación")

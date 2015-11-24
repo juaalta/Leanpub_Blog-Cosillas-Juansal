@@ -5,18 +5,18 @@ Hola aquí os presento mi Ouya y las primeras impresiones con ella.
 
 Aquí esta la Ouya dentro de su caja, junto con la pegatina que la acompaña.
 
-![Caja Abierta](images/IMAG0688.jpg)
+![Caja Abierta](images/ouya/IMAG0688.jpg)
 
-![Pegatina incluida en la caja](images/IMAG0697.jpg)
+![Pegatina incluida en la caja](images/ouya/IMAG0697.jpg)
 
 
 Como puede verse, la presentación de la consola está muy cuidada, aunque no se aprecia en la foto, en la parte de arriba de la caja está el nombre de la consola.
 
 Aquí teneis los mandos, la primera foto contiene los 2 mandos que pedí y la segunda un mando abierto para ver los compartimentos de pilas:
 
-![2 Mandos](images/IMAG0689.jpg)
+![2 Mandos](images/ouya/IMAG0689.jpg)
 
-![Mando con pilas](images/IMAG0694.jpg)
+![Mando con pilas](images/ouya/IMAG0694.jpg)
 
 
  A mí lo que me chocó es que las pilas estuvieran situadas en los laterales. Aunque como me comentaron en los foros, esto puede haberse hecho para equiparar el peso del mando.
@@ -26,22 +26,22 @@ Después de esto ya pude entrar en la consola.
 
 Lo que me chocó bastante es que al loguearme la primera vez tuviera que añadir una tarjeta o un código de cupón para poder entrar.
 
-![Pantalla login](images/IMAG0698.jpg)
+![Pantalla login](images/ouya/IMAG0698.jpg)
 
-![Petición tarjeta crédito](images/IMAG0699.jpg)
+![Petición tarjeta crédito](images/ouya/IMAG0699.jpg)
 
 
 Es una de las pocas cosas que me desagradan de la consola, además no deja claro si los datos se guardan en la consola u online.
 
 La pantalla principal me gusta por su sencillez:
 
-![Pantalla principal](images/IMAG0700.jpg)
+![Pantalla principal](images/ouya/IMAG0700.jpg)
 
 Aquí teneis 2 fotos del market, el cual se entra mediante la opción discover del menú principal:
 
-![Market](images/IMAG0701.jpg)
+![Market](images/ouya/IMAG0701.jpg)
 
-![Juego seleccionado del market](images/IMAG0702.jpg)
+![Juego seleccionado del market](images/ouya/IMAG0702.jpg)
 
 El market me gusta por su sencillez, pero creo que deberían de mejorarlo. Aunque sencillo es un poco engorroso.
 Las imágenes se cargan cada vez, lo que hace que si te quedas sin conexión no se vea ninguna.
@@ -49,7 +49,7 @@ La primera vez que intentas ir a ver la lista de juegos, como no hay ninguno, te
 
 Otra cosa que he visto y que creo que han de mejorar es la personalización de los menús de configuración:
 
-![Menus de configuración](images/IMAG0703.jpg)
+![Menus de configuración](images/ouya/IMAG0703.jpg)
 
 Utilizan los que lleva Android por defecto y no están personalizados, podrían por lo menos cambiarles el color al rojo de los menús de la consola.
 
