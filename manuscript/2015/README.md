@@ -23,5 +23,4 @@ En esta página he creado una relación de las entradas del blog con su fecha de
 | 20 de septiembre de 2015 | [Construcción de máquina recreativa - El Sonido](#2015_16) |
 | 21 de septiembre de 2015 | [Construcción de máquina recreativa - Agradecimientos](#2015_17) |
 | 3 de noviembre de 2015 | [Sistema de apertura de un escaparate con arduino](#2015_18) |
-| 26 de noviembre de 2015 | [Instalación de las vmware tools en linux, a partir de la
-versión 12 de VMware](#2015_19) |
+| 26 de noviembre de 2015 | [Instalación de las vmware tools en linux, a partir de la versión 12 de VMware](#2015_19) |
