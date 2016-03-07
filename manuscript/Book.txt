@@ -50,6 +50,7 @@ mainmatter:
 2015/construccion_de_maquina_recreativa_-_agradecimientos.md
 2015/sistema_de_apertura_de_un_escaparate_con_arduino.md
 2015/instalacion_de_las_vmware_tools_en_linux,_a_partir_de_la_version_12_de_vmware.md
+2016/maquina_virtual_para_trabajar_con_documentos_en_markdown_-_nueva_version.md
 secciones_adicionales/README.md
 secciones_adicionales/links_interesantes.md
 secciones_adicionales/plugins_de_firefox.md
