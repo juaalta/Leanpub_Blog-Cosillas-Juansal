@@ -14,11 +14,11 @@ sudo dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate
 
 ### Instalación de utilidades que yo considero necesarias.
 
-Las utilidades que considero necesarias dentro del sistema operativo y que no son las que permiten trabajar con Markdown son las siguientes:
+Las utilidades que considero necesarias dentro del sistema operativo y que no son las que permiten trabajar directamente con Markdown son las siguientes:
 
 #### Yumex
 
-Como gestor de paquetes he elegido a Yumex.
+Como gestor de paquetes he elegido a Yumex.  
 Para esto he ejecutado los siguientes comandos:
 
 ``` bash
@@ -27,7 +27,7 @@ sudo dnf install yumex
 
 #### Firefox
 
-Para navegar y poder visualizar los documentos generados como web o website he elegido Firefox.
+Para navegar y poder visualizar los documentos generados como web o website he elegido Firefox.  
 Para esto he ejecutado los siguientes comandos:
 
 ``` bash
@@ -36,7 +36,7 @@ sudo dnf install firefox
 
 #### Gimp
 
-Como editor de imágenes he elegido Gimp.
+Como editor de imágenes he elegido Gimp.  
 Para esto he ejecutado los siguientes comandos:
 
 ``` bash
@@ -70,7 +70,7 @@ Después de esto hay que reiniciar para que el selinux se desactive.
 
 #### Cliente FTP
 
-Como cliente de FTP he elegido el FileZilla.
+Como cliente de FTP he elegido el FileZilla.  
 Para esto he ejecutado los siguientes comandos:
 
 ``` bash
@@ -79,7 +79,7 @@ sudo dnf install filezilla
 
 #### GIT
 
-Para acceder a los documentos guardados en GitHub he instalado el cliente de Git.
+Para acceder a los documentos guardados en GitHub he instalado el cliente de Git.  
 Para esto he ejecutado los siguientes comandos:
 
 ``` bash
@@ -89,7 +89,7 @@ sudo dnf install git
 
 #### Sublime text
 
-Como editor general de textos he elegido el Sublime Text.
+Como editor general de textos he elegido el Sublime Text.  
 Para esto he seguido los siguientes pasos:
 
 He descargado la versión 2 de: [http://www.sublimetext.com/2](http://www.sublimetext.com/2)
@@ -153,6 +153,7 @@ El paquete de instalación lo he descarado desde la [página de Haroopad](http:/
 El link de descarga que he utilizado es: [Linux Binary (64bit)](https://bitbucket.org/rhiokim/haroopad-download/downloads/haroopad-v0.13.1-x64.tar.gz)
 
 Los comandos que he utilizado para realizar la instalación son:
+
 ``` bash
 tar zxvf haroopad-v0.13.1-x64.tar.gz
 
@@ -174,6 +175,7 @@ Es un cliente gráfico, no necesita usar la línea de comandos para su funcionam
 ##### Información adicional
 
 [Página oficial de haroopad](http://pad.haroopress.com/user.html)
+
 [Blog con información de como instalar el Haroopad en Fedora](http://www.bonashen.com/post/artifice/20140805-install-haroopad-on-fedora-20-64bit)
 
 #### Gitbook
@@ -183,10 +185,19 @@ La versión en el momento de la redacción del documento es la 2.5.2.
 
 ##### Requerimientos previos
 
-Para poder instalar el Gitbook se ha de instalar el gestor de paquetes de Node.js npm.
+###### Node.js
+Para poder instalar el Gitbook se ha de instalar el gestor de paquetes de Node.js npm. Para instalarlo he ejecutado el siguiente comando:
 
 ``` bash
 sudo dnf install npm
+```
+
+###### Calibre
+
+Para poder generar los libros en cualquier formato no web se necesita Calibre. Para instalarlo he ejecutado el siguiente comando:
+
+``` bash
+sudo dnf install calibre
 ```
 
 ##### Instalación de gitbook desde npm
@@ -222,7 +233,7 @@ gitbook init ./carpeta
 ####### Opciones disponibles:
 
 ```
-  init [directory] 	 create files and folders based on contents of SUMMARY.md
+  init [directory]   create files and folders based on contents of SUMMARY.md
 ```
 
 ###### Previsualizar y servir un libro:
@@ -241,12 +252,12 @@ gitbook serve ./repository
 ####### Opciones disponibles:
 
 ```
-  serve [book] 	 Build then serve a gitbook from a directory
-    --port 	 Port for server to listen on (Default is 4000)
-    --lrport 	 Port for livereload server to listen on (Default is 35729)
-    --watch 	 Enable/disable file watcher (Default is true)
-    --format 	 Format to build to (Default is website; Values are website, json, ebook)
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  serve [book]   Build then serve a gitbook from a directory
+    --port   Port for server to listen on (Default is 4000)
+    --lrport   Port for livereload server to listen on (Default is 35729)
+    --watch    Enable/disable file watcher (Default is true)
+    --format   Format to build to (Default is website; Values are website, json, ebook)
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 ```
 
 ###### Generar web estática:
@@ -263,9 +274,9 @@ gitbook build ./repository
 ####### Opciones disponibles:
 
 ```
-  build [book] [output] 	 build a book
-    --format 	 Format to build to (Default is website; Values are website, json, ebook)
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  build [book] [output]    build a book
+    --format   Format to build to (Default is website; Values are website, json, ebook)
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 ```
 
 ###### Generar pdf:
@@ -282,8 +293,8 @@ gitbook pdf ./repository
 ####### Opciones disponibles:
 
 ```
-  pdf [book] [output] 	 build a book to pdf
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  pdf [book] [output]    build a book to pdf
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 ```
 
 ###### Generar epub:
@@ -300,8 +311,8 @@ gitbook epub ./repository
 ####### Opciones disponibles:
 
 ```
-  epub [book] [output] 	 build a book to epub
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  epub [book] [output]   build a book to epub
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 ```
 
 ###### Generar mobi:
@@ -318,8 +329,8 @@ gitbook mobi ./repository
 ####### Opciones disponibles:
 
 ```
-  mobi [book] [output] 	 build a book to mobi
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  mobi [book] [output]   build a book to mobi
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 ```
 
 ###### Ayuda completa de gitbook desde línea de comandos
@@ -365,56 +376,60 @@ gitbook help
 Resultado obtenido:
 
 ```
-  build [book] [output] 	 build a book
-    --format 	 Format to build to (Default is website; Values are website, json, ebook)
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  build [book] [output]    build a book
+    --format   Format to build to (Default is website; Values are website, json, ebook)
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 
-  pdf [book] [output] 	 build a book to pdf
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  pdf [book] [output]    build a book to pdf
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 
-  epub [book] [output] 	 build a book to epub
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  epub [book] [output]   build a book to epub
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 
-  mobi [book] [output] 	 build a book to mobi
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  mobi [book] [output]   build a book to mobi
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 
-  serve [book] 	 Build then serve a gitbook from a directory
-    --port 	 Port for server to listen on (Default is 4000)
-    --lrport 	 Port for livereload server to listen on (Default is 35729)
-    --watch 	 Enable/disable file watcher (Default is true)
-    --format 	 Format to build to (Default is website; Values are website, json, ebook)
-    --log 	 Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
+  serve [book]   Build then serve a gitbook from a directory
+    --port   Port for server to listen on (Default is 4000)
+    --lrport   Port for livereload server to listen on (Default is 35729)
+    --watch    Enable/disable file watcher (Default is true)
+    --format   Format to build to (Default is website; Values are website, json, ebook)
+    --log    Minimum log level to display (Default is info; Values are debug, info, warn, error, disabled)
 
-  install [book] 	 install plugins dependencies
+  install [book]   install plugins dependencies
 
-  init [directory] 	 create files and folders based on contents of SUMMARY.md
+  init [directory]   create files and folders based on contents of SUMMARY.md
 ```
 
 ##### Información adicional
 
 [https://github.com/GitbookIO/gitbook/](https://github.com/GitbookIO/gitbook/)
 
-#### Gitbook Editor
+#### Gitbook Editor Legacy
 
-Este editor está descontinuado, pero funciona perfectamente para la versión de Gitbook indicada en este documento. Además de esto yo prefiero poder editar mis documentos en local y después subirlos a la web.
+Este editor está descontinuado, pero funciona perfectamente para la versión de Gitbook indicada en este documento. Este editor me permite ver como quedaran los documentos antes de generarlos y de esta forma evitar tener que generar el documento para ver como quedará después de generado.
 
 ##### Requerimientos previos
 
+###### Calibre
+
+Para poder generar los libros en cualquier formato no web se necesita Calibre. Para instalarlo he ejecutado el siguiente comando:
+
 ``` bash
-yum install calibre
+sudo dnf install calibre
 ```
 
-##### Instalación de gitbook editor
+##### Instalación de gitbook editor legacy
 
-1. Descargar el instalable desde la siguiente ruta: [https://github.com/GitbookIO/editor/releases](https://github.com/GitbookIO/editor/releases)
+1. Descargar el instalable desde la siguiente ruta: [https://github.com/GitbookIO/editor-legacy/releases](https://github.com/GitbookIO/editor-legacy/releases)
 2. Descomprimir usando:
  ``` bash
  tar zxvf gitbook-linux64.tar.gz
  ```
-3. Renombrar y mover la carpeta de gitbook editor:
+3. Renombrar y mover la carpeta de gitbook editor: 
 ``` bash
-mv linux64 gitbook
-mv gitbook ..
+mv linux64 gitbook-editor
+mv gitbook-editor ..
 ```
 4. Por un bug en la referencia a una librería se ha de ejecutar el siguiente comando:
 ``` bash
@@ -422,7 +437,7 @@ sudo ln -sf /lib64/libudev.so.1 /lib64/libudev.so.0
 ```
 5. Arranque del script de instalación:
 ``` bash
-cd gitbook
+cd gitbook-editor
 chmod +x *.sh
 ./install.sh
 ```
@@ -436,18 +451,29 @@ Es un cliente gráfico, no necesita usar la línea de comandos.
 
 ##### Información adicional
 
-[Página de github de Gitbook Editor](https://github.com/GitbookIO/editor)
+[Página de github de Gitbook Editor Legady](https://github.com/GitbookIO/editor-legacy/)
 
+#### Gitbook Editor
+
+Este editor es la evolución del anterior y tiene conexión con los libros publicados en GitBook. Lo que no me gusta es la necesidad de git para poder crear libros que no desees subir a GitBook y tenerlos solamente en local.
+
+Este editor no lo he instalado en mi máquina por no tener paquetes rpm para su instalación.
+
+
+##### Información adicional
+
+[Página de github de Gitbook Editor](https://www.gitbook.com/editor)
 
 #### Leanpub
 
-Esta herramienta es completamente web y no hay cliente por línea de comandos ni offline.
-Aunque es anterior a Gitbook la conocí después y la uso para lo mismo que esta, para poder tener el blog de forma offline y de libro.
+Esta herramienta es completamente web y no tiene cliente por línea de comandos ni offline.
+Aunque es anterior a Gitbook la conocí después y la uso para lo mismo que ésta, para poder tener el blog de forma offline y de libro.
 En mi caso genero los documentos en local y los subo mediante github. Después desde la web pido la generación del documento.
 
 ##### Información adicional
 
 [Página oficial de Leanpub](https://leanpub.com/)
+
 [Manual online de Leanpub](https://leanpub.com/help/manual)
 
 #### Easybook
@@ -525,9 +551,9 @@ Una forma de saber si se ha instalado de forma correcta el programa se puede lan
 Si no dá un error el resultado de la ejecución de éste es similar a lo siguiente:
 
 ```
-                     |              |
- ,---.,---.,---.,   .|---.,---.,---.|__/
- |---',---|`---.|   ||   ||   ||   ||  \
+                     |              |    
+ ,---.,---.,---.,   .|---.,---.,---.|__/ 
+ |---',---|`---.|   ||   ||   ||   ||  \ 
  `---'`---^`---'`---|`---'`---'`---'`   `
                 `---'
 
@@ -606,4 +632,6 @@ Para generar el libro en formato pdf se ha de ejecutar el siguiente comando:
 ##### Información adicional
 
 [Página oficial de easybook](http://easybook-project.org/)
+
 [Página de github de easybook](https://github.com/javiereguiluz/easybook)
+
