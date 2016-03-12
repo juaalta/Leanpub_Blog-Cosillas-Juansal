@@ -1,4 +1,4 @@
-## Máquina virtual para trabajar con documentos en Markdown - Nueva versión
+## Máquina virtual para trabajar con documentos en Markdown - Nueva versión {#2016_01}
 
 Después de estar trabajando con markdown durante un tiempo he ido actualizando y renovando las aplicaciones que utilizo. Por esto me he decido a volver a crear la máquina virtual desde cero, de esta forma aprovecho para actualizar tanto el sistema operativo, como las aplicaciones que utilizo.
 
