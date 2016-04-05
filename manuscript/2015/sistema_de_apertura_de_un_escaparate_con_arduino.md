@@ -2,9 +2,10 @@
 
 ### Descripción
 
-La finalidad del proyecto es crear un sistema selectivo de apertua de escaparates.
+La finalidad del proyecto es crear un sistema selectivo de apertura de escaparates.
 
 Los requerimientos son los siguientes:
+
 - Hay un total de 8 escaparates.
 - Se han de poder abrir cada uno de los 8 escaparates de forma independiente.
 - Se han de poder abrir todos los escaparates a la vez.
@@ -39,7 +40,7 @@ El esquema en Fritzing es el siguiente:
 
 ![Esquema usando Fritzing](images/vitrinas_tienda/Vitrinas_tienda_bb.png)
 
-Como puede observarse en las siguientes imágenes ha sido montado sobre una placa pcb de 9x15.
+Como puede observarse en las siguientes imágenes, el sistema ha sido montado sobre una placa pcb de 9x15.
 La fuente de alimentación se ha elegido de 30A porque cada uno de los cerrojos usa 900 mA y hay 24 de estos.
 El móldulo LM2596s ha sido usado para reducir el voltaje de entrada a el arduino de 12V a 6V.
 
