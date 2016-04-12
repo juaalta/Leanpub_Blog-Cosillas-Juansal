@@ -288,5 +288,5 @@ void  loop()
 
 - [Codebender](https://codebender.cc/sketch:178358)
 - [Instructables](http://www.instructables.com/id/Sistema-de-apertura-de-un-escaparate-con-arduino/)
-- [Artículo en inglés]((#2016_02))
+- [Artículo en inglés](#2016_02)
 

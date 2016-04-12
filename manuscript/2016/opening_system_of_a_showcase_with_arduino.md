@@ -285,5 +285,5 @@ void  loop()
 
 - [Codebender](https://codebender.cc/sketch:178358)
 - [Instructables](http://www.instructables.com/id/Opening-System-of-a-Showcase-With-Arduino)
-- [Article in Spanish]((#2015_18))
+- [Article in Spanish](#2015_18)
 
