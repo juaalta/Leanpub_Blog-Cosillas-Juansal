@@ -1,73 +1,70 @@
-## Sistema de apertura de un escaparate con arduino {#2015_18}
+## Opening system of a showcase with arduino {#2016_02}
 
-### Descripción
+### Description
 
-La finalidad del proyecto es crear un sistema selectivo de apertura de escaparates.
+The purpose of the project is to create a system of selective opening of shop windows.
 
-Los requerimientos son los siguientes:
+The requirements are:
 
-- Hay un total de 8 escaparates.
-- Se han de poder abrir cada uno de los 8 escaparates de forma independiente.
-- Se han de poder abrir todos los escaparates a la vez.
-- El tiempo durante el cual los cerrojos deben de estar abiertos es de 1 minuto.
-- Hay 3 cerrojos por escaparate.
+- There are a total of 8 windows.
+- They must be able to open each of the 8 windows independently.
+- They must be able to open all the windows at once.
+- The time during which the locks must be opened is 1 minute.
+- There are 3 bolts for window.
 
-![Escaparate](images/vitrinas_tienda/IMG-20150816-WA0000.jpg)
+![Shop Window](images/vitrinas_tienda/IMG-20150816-WA0000.jpg)
 
-### Instrucciones
+### Instructions
 
-#### Componentes usados
+#### Components used
 
-Los componentes usados han sido:
+The components used have been:
 
-- [Fuente de alimentación de 12V y 30A](http://www.kitprinter3d.com/es/electronica/99-fuente-de-alimentacion-conmutada-12v-30a.html)
+- [Power supply 12V 30A](http://www.kitprinter3d.com/es/electronica/99-fuente-de-alimentacion-conmutada-12v-30a.html)
 - [Arduino nano v 3.0 5v](http://www.ebay.es/itm/311064700128?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
-- [Reductor voltaje LM2596s](http://www.aliexpress.com/item/10pcslot-LM2596s-DC-DC-step-down-power-supply-module-3A-adjustable-step-down-module-LM2596-voltage/1289330336.html)
-- [Bloque relés I2C 12v 10A](http://www.ereshop.com/shop/relays-c-143_178/i2c-bus-high-current-relay-12v-pcf8574-p-739.html)
-- [Teclado 4 x 3](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=68_185&products_id=803&zenid=bad04c23e16790298fa3003dd156a414)
-- [Placa PCB 9x15 mm](http://es.aliexpress.com/item/5pcs-9-15-cm-Printed-Circuit-Board-9X15-cm-Universal-PCB-Board-Double-Sided-Prototype-PCB/32254187154.html?adminSeq=221739572&shopNumber=1403485)
-- [4-pin 2.00mm connector](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=177&products_id=798&zenid=bad04c23e16790298fa3003dd156a414)
+- [Step down power supply module LM2596s](http://www.aliexpress.com/item/10pcslot-LM2596s-DC-DC-step-down-power-supply-module-3A-adjustable-step-down-module-LM2596-voltage/1289330336.html)
+- [I2C Relay 12V 10A](http://www.ereshop.com/shop/relays-c-143_178/i2c-bus-high-current-relay-12v-pcf8574-p-739.html)
+- [Membrane keypad 4x3](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=68_185&products_id=803&zenid=bad04c23e16790298fa3003dd156a414)
+- [PCB board 9x15 mm](http://es.aliexpress.com/item/5pcs-9-15-cm-Printed-Circuit-Board-9X15-cm-Universal-PCB-Board-Double-Sided-Prototype-PCB/32254187154.html?adminSeq=221739572&shopNumber=1403485)
+- [4-pin 2.00mm through-hole](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=177&products_id=798&zenid=bad04c23e16790298fa3003dd156a414)
 - [4W 2.00mm 4F/4F 6"](https://www.ereshop.com/shop/index.php?main_page=product_info&cPath=173&products_id=743&zenid=bad04c23e16790298fa3003dd156a414)
-- 2 resistencias de 10K
-- [Cerrojo](http://es.aliexpress.com/wholesale?catId=0&initiative_id=SB_20151102121134&SearchText=solenoid+door+lock+12v+0.8a)
+- 2 x 10k resistors
+- [Bolt](http://es.aliexpress.com/wholesale?catId=0&initiative_id=SB_20151102121134&SearchText=solenoid+door+lock+12v+0.8a)
+![Bolt](../imagenes/vitrinas_tienda/Cerrojo.jpg)
 
-![Cerrojo](images/vitrinas_tienda/Cerrojo.jpg)
+#### Assembly of the circuit
 
+The Fritzing scheme is as follows:
 
-#### Montaje del circuito
+![Scheme using Fritzing](images/vitrinas_tienda/Vitrinas_tienda_bb.png)
 
-El esquema en Fritzing es el siguiente:
+As can be seen in the following images, the system has been mounted on a pcb board 9x15.
+The power supply has been chosen of 30A because each of the bolts uses 900 mA and there are 24 of these.
+The LM2596S module has been used to reduce the input voltage to the Arduino from 12V to 6V.
 
-![Esquema usando Fritzing](images/vitrinas_tienda/Vitrinas_tienda_bb.png)
+Images of the system mounted inside the laboratory:
 
-Como puede observarse en las siguientes imágenes, el sistema ha sido montado sobre una placa pcb de 9x15.
-La fuente de alimentación se ha elegido de 30A porque cada uno de los cerrojos usa 900 mA y hay 24 de estos.
-El móldulo LM2596s ha sido usado para reducir el voltaje de entrada a el arduino de 12V a 6V.
+![Upper detail of the assembled PCB](images/vitrinas_tienda/Galeria_01.JPG)
 
-Imágenes del sistema montado dentro del laboratorio:
+![Bottom detail of the assembled PCB](images/vitrinas_tienda/Galeria_02.JPG)
 
-![Detalle superior de la placa montada](images/vitrinas_tienda/Galeria_01.JPG	)
+![Keyboard and relay block](images/vitrinas_tienda/Galeria_03.jpg)
 
-![Detalle inferior de la placa montada](images/vitrinas_tienda/Galeria_02.JPG)
+![Connection of the relay block](images/vitrinas_tienda/Galeria_04.JPG)
 
-![Teclado y bloque de relés](images/vitrinas_tienda/Galeria_03.jpg)
-
-![Conexión del bloque de relés](images/vitrinas_tienda/Galeria_04.JPG)
-
-![Sistema completo](images/vitrinas_tienda/Galeria_05.JPG)
+![Complete system](images/vitrinas_tienda/Galeria_05.JPG)
 
 #### Software
 
-Para comprobar la dirección I2C del bloque de relés se ha usado el programa llamado [Arduino I2c Scanner](http://todbot.com/blog/2009/11/29/i2cscanner-pde-arduino-as-i2c-bus-scanner/).
+To verify the address I2C of the relay block has been used the program called  [Arduino I2c Scanner](http://todbot.com/blog/2009/11/29/i2cscanner-pde-arduino-as-i2c-bus-scanner/).
 
-Las librerías usadas han sido:
+The libraries used have been:
 
-* [I2C_RL8xxM](http://whatsbroken.com.au/arduino-i2c-relays/i2c_rl8xxm/): librería usada para acceder al bloque de relés.
-* Wire: librería usada para las conexiones I2C y dependencia de la librería I2C_RL8xxM.
-* [keypad](http://www.arduino.cc/playground/uploads/Code/Keypad.zip): librería usada para la gestión del teclado 4x3.
+* [I2C_RL8xxM](http://whatsbroken.com.au/arduino-i2c-relays/i2c_rl8xxm/): library used to access the relay block.
+* Wire: library used to I2C connections and is a dependenciy of the I2C_RL8xxM library.
+* [keypad](http://www.arduino.cc/playground/uploads/Code/Keypad.zip): library used to manage the membrane keypad 4x3.
 
-
-El código del arduino es el siguiente:
+The code of the Arduino is the following:
 
 ``` cpp
 #include <Wire.h>
@@ -284,9 +281,9 @@ void  loop()
 }
 ```
 
-## Lugares complementarios y adicionales en los que se ha publicado el artículo:
+### Complementary and additional places in which the article has been published:
 
 - [Codebender](https://codebender.cc/sketch:178358)
-- [Instructables](http://www.instructables.com/id/Sistema-de-apertura-de-un-escaparate-con-arduino/)
-- [Artículo en inglés]((#2016_02))
+- [Instructables](http://www.instructables.com/id/Opening-System-of-a-Showcase-With-Arduino)
+- [Article in Spanish]((#2015_18))
 

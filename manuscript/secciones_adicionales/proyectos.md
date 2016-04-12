@@ -4,7 +4,13 @@ En esta página iré añadiendo todos los proyectos que vaya realizando, de esta
 
 ### Arduino
 
+#### Artículos en castellano
+
 [Sistema de apertura de un escaparate con arduino](http://blog.juansal.com/2015/11/sistema-de-apertura-de-un-escaparate.html)
+
+#### Artículos en inglés
+
+[Opening system of a showcase with arduino](http://blog.juansal.com/2016/04/opening-system-of-showcase-with-arduino.html)
 
 ### Máquina recreativa
 
@@ -30,6 +36,10 @@ En esta página iré añadiendo todos los proyectos que vaya realizando, de esta
 
 [Construcción de máquina recreativa - Agradecimientos](http://blog.juansal.com/2015/09/construccion-de-maquina-recreativa_21.html)
 
+#### Documento completo
+
+[Construcción de máquina recreativa](http://blog.juansal.com/p/la-maquina-recreativa-de-juansal.html)
+
 #### Documento descargable
 
 [La máquina arcade de Juansal en Gitbook](http://juaalta.gitbooks.io/construccion-de-maquina-recreativa/)
@@ -43,3 +53,4 @@ En esta página iré añadiendo todos los proyectos que vaya realizando, de esta
 [Información sobre temperatura y discos duros en la cubietruck (cubieboard 3)](http://blog.juansal.com/2014/12/informacion-sobre-temperatura-y-discos.html)
 
 [Web con información sobre temperatura y discos duros en la cubietruck (cubieboard 3) ](http://blog.juansal.com/2015/07/web-con-informacion-sobre-temperatura-y.html)
+
