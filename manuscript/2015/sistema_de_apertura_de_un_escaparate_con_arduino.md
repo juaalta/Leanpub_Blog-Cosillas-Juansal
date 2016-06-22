@@ -12,7 +12,7 @@ Los requerimientos son los siguientes:
 - El tiempo durante el cual los cerrojos deben de estar abiertos es de 1 minuto.
 - Hay 3 cerrojos por escaparate.
 
-![Escaparate](images/vitrinas_tienda/IMG-20150816-WA0000.jpg)
+![Escaparate](images/vitrinas_tienda/IMG-20150816-WA0000.jpg "Escaparate")
 
 ### Instrucciones
 
@@ -31,7 +31,7 @@ Los componentes usados han sido:
 - 2 resistencias de 10K
 - [Cerrojo](http://es.aliexpress.com/wholesale?catId=0&initiative_id=SB_20151102121134&SearchText=solenoid+door+lock+12v+0.8a)
 
-![Cerrojo](images/vitrinas_tienda/Cerrojo.jpg)
+![Cerrojo](images/vitrinas_tienda/Cerrojo.jpg "Cerrojo")
 
 
 #### Montaje del circuito
