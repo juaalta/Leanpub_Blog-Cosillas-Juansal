@@ -54,6 +54,7 @@ mainmatter:
 2016/maquina_virtual_para_trabajar_con_documentos_en_markdown_-_nueva_version.md
 2016/opening_system_of_a_showcase_with_arduino.md
 2016/informacion_sobre_la_cpu_de_la_cubietruck_cubieboard_3.md
+2016/maquina_virtual_de_desarrollo_para_proyectos_de_angularjs_y_nodejs.md
 secciones_adicionales/README.md
 secciones_adicionales/links_interesantes.md
 secciones_adicionales/plugins_de_firefox.md
