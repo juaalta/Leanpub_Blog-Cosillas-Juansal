@@ -1,14 +1,14 @@
-# Monitor basado en AngularJs y NodeJs para la Cubietruck (Cubieboard 3) {#2016_05}
+## Monitor basado en AngularJs y NodeJs para la Cubietruck (Cubieboard 3)
 
-## Finalidad del artículo
+### Finalidad del artículo
 
-La finalidad de este artículo es mostrar de forma gráfica e intuitiva la información mostrada en el [anterior artículo sobre la Cubietruck](#2015_06).  
+La finalidad de este artículo es mostrar de forma gráfica e intuitiva la información mostrada en el [anterior artículo sobre la Cubietruck](../2015/web_con_informacion_sobre_temperatura_y_discos_duros_en_la_cubietruck_cubieboard_3.md).  
 Para ello he creado una web con AngularJS atacando a servicios REST hechos con NodeJS. Para mejorar la parte gráfica he utilizado una plantilla web gratuita llamada [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html).  
-El desarrollo de la página y de los servicios REST los he realizado utilizando la [máquina virtual](#2016_04) que he creado para tal efecto.
+El desarrollo de la página y de los servicios REST los he realizado utilizando la [máquina virtual](../2016/maquina_virtual_de_desarrollo_para_proyectos_de_angularjs_y_nodejs.md) que he creado para tal efecto.
 
-## Software instalado en la Cubieboard
+### Software instalado en la Cubieboard
 
-### Git
+#### Git
 
 Este es el cliente usado para descargar la web desde github.  
 Para la instalación he ejecutado los siguientes comandos:
@@ -17,7 +17,7 @@ Para la instalación he ejecutado los siguientes comandos:
 apt-get install git
 ```
 
-### NodeJS
+#### NodeJS
 
 Para la instalación de [NodeJS](https://nodejs.org/) he elegido la última versión (en el momento de escribir el artículo es la 6.x) y he ejecutado los siguientes comandos:
 
@@ -26,13 +26,13 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-#### Información adicional
+##### Información adicional
 
 [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
-## Librerías adicionales que he instalado en la Cubieboard para poder realizar la monitorización
+### Librerías adicionales que he instalado en la Cubieboard para poder realizar la monitorización
 
-### lm-sensors
+#### lm-sensors
 
 Para poder detectar la temperatura de la CPU he usado la herramienta [lm-sensors](http://www.lm-sensors.org).  
 Los pasos que he seguido para instalarla han sido los siguientes:
@@ -50,15 +50,15 @@ sudo sensors-detect
 sudo service kmod start
 ```
 
-#### Información adicional
+##### Información adicional
 
 [lm-sensors](http://www.lm-sensors.org)  
 [Repositorio Github](https://github.com/groeck/lm-sensors)  
 [How do I get the CPU temperature?](http://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature)
 
-## Software adicional instalado en la máquina de desarrollo
+### Software adicional instalado en la máquina de desarrollo
 
-### less
+#### less
 
 Como requerimiento de la plantilla usada para generar la web se necesita el preprocesador de css [less](http://lesscss.org/).  
 Para instalarlo he ejecutado los siguientes comandos:
@@ -67,9 +67,9 @@ Para instalarlo he ejecutado los siguientes comandos:
 sudo npm install -g less
 ```
 
-## Proceso de creación de la web en la máquina virtual de desarrollo
+### Proceso de creación de la web en la máquina virtual de desarrollo
 
-### Preparación de la plantilla
+#### Preparación de la plantilla
 
 Para esta web he utilizado una plantilla gratuita llamada [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html) de la página de [Almsaeed Studio](https://almsaeedstudio.com/).  
 La he descargado desde la página principal pulsando sobre el link [Download](https://almsaeedstudio.com/download/AdminLTE-master), la versión en el momento en que descargué la plantilla era la 2.3.3.
@@ -104,7 +104,7 @@ Después de los pasos anteriores ejecuto la instalación de dependencias por par
 npm install
 ```
 
-### Creación de los servicios REST
+#### Creación de los servicios REST
 
 Para la creación de los servicios REST he usado NodeJS, por su capacidad para ejecutar comandos de shell de Linux. Todo el código se concentra dentro del fichero `server.js`.  
 Los servicios que allí se encuentran están están nombrados, dependiendo para que parte del sistema monitorizan, estas partes (en el momento de redacción del documento v.1.1.0) son las siguientes:
@@ -115,7 +115,7 @@ Los servicios que allí se encuentran están están nombrados, dependiendo para 
 
 Cada servicio llama a un script cuyo nombre es el mismo que el del servicio. Estos scripts se encuentran dentro de la carpeta `scripts` de la web.
 
-### Diseño e implementación de la web
+#### Diseño e implementación de la web
 
 Basándome en la plantilla instalada, he creado 3 secciones para la web, estas son:
 
@@ -123,13 +123,13 @@ Basándome en la plantilla instalada, he creado 3 secciones para la web, estas s
 * CPU: en esta sección se encuentra toda la información sobre el estado de la CPU.
 * HDD: en esta sección se encuentra toda la información sobre el estado de los discos duros y sus particiones.
 
-![Visión general](images/cubieboard_monitor/Captura_01.PNG "Visión general")
+![Visión general](../imagenes/cubieboard_monitor/Captura_01.PNG "Visión general")
 
-![CPU](images/cubieboard_monitor/Captura_02.PNG "CPU")
+![CPU](../imagenes/cubieboard_monitor/Captura_02.PNG "CPU")
 
-![HDD](images/cubieboard_monitor/Captura_03.PNG "HDD")
+![HDD](../imagenes/cubieboard_monitor/Captura_03.PNG "HDD")
 
-## Instalación en la Cubieboard
+### Instalación en la Cubieboard
 
 Los pasos para instalar el proyecto en la Cubieboard son los siguientes:
 
@@ -168,7 +168,7 @@ También puede ejecutarse:
 npm start
 ```
 
-## Arranque automático
+### Arranque automático
 
 Para que la web arranque de forma automática al arrancar/reiniciar la cubieboard he seguido los siguientes pasos:
 
@@ -372,19 +372,19 @@ update-rc.d cubieboardMonitor defaults
 ```
 
 
-## Links con información adicional y complementaria
+### Links con información adicional y complementaria
 
 Para la creación de este proyecto me he basado en la información publicada en este artículo: [Tutorial de AngularJS. Ejemplo de aplicación web conectada a una API REST con Node](https://carlosazaustre.es/blog/tutorial-ejemplo-de-aplicacion-web-con-angular-js-y-api-rest-con-node/)
 
 
-### Links con información y descarga del tema AdminLTE
+#### Links con información y descarga del tema AdminLTE
 
 [Almsaeed Studio](https://almsaeedstudio.com/)  
 [Documentación](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html)  
 [Preview](https://almsaeedstudio.com/themes/AdminLTE/index2.html)  
 [Repositorio de github](https://github.com/almasaeed2010/AdminLTE)
 
-### Páginas con temas para AngularJS
+#### Páginas con temas para AngularJS
 
 [Start Angular](http://startangular.com/)  
 [20 Free Bootstrap 3 Admin Dashboard Templates For Your Web App 2016](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)  
