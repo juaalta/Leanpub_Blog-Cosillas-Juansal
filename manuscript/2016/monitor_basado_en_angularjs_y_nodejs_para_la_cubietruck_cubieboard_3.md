@@ -1,4 +1,4 @@
-## Monitor basado en AngularJs y NodeJs para la Cubietruck (Cubieboard 3)
+## Monitor basado en AngularJs y NodeJs para la Cubietruck (Cubieboard 3) {#2016_05}
 
 ### Finalidad del artículo
 
@@ -123,11 +123,11 @@ Basándome en la plantilla instalada, he creado 3 secciones para la web, estas s
 * CPU: en esta sección se encuentra toda la información sobre el estado de la CPU.
 * HDD: en esta sección se encuentra toda la información sobre el estado de los discos duros y sus particiones.
 
-![Visión general](../imagenes/cubieboard_monitor/Captura_01.PNG "Visión general")
+![Visión general](images/cubieboard_monitor/Captura_01.PNG "Visión general")
 
-![CPU](../imagenes/cubieboard_monitor/Captura_02.PNG "CPU")
+![CPU](images/cubieboard_monitor/Captura_02.PNG "CPU")
 
-![HDD](../imagenes/cubieboard_monitor/Captura_03.PNG "HDD")
+![HDD](images/cubieboard_monitor/Captura_03.PNG "HDD")
 
 ### Instalación en la Cubieboard
 
