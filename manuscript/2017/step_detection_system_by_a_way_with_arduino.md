@@ -15,7 +15,7 @@ The requirements are:
 - The detection module is at the entrance of the garden.
 - The warning module is inside the house.
 
-![Detection module with solar panel](../imagenes/detector_paso_coches/Descripcion_01.jpg "Detection module with solar panel")
+![Detection module with solar panel](images/detector_paso_coches/Descripcion_01.jpg "Detection module with solar panel")
 
 ### Instructions
 
@@ -44,39 +44,39 @@ The Fritzing scheme is as follows:
 
 - Detection module
 
-![Detection module](../imagenes/detector_paso_coches/DetectorCoches_bb.png "Detection module")
+![Detection module](images/detector_paso_coches/DetectorCoches_bb.png "Detection module")
 
 In this scheme has not been added to the connection part of the Lipo Rider Pro, battery and solar panel, I not to have the designs for Fritzing.
 
 - Warning module
 
-![Warning module](../imagenes/detector_paso_coches/Alarma_bb.png "Warning module")
+![Warning module](images/detector_paso_coches/Alarma_bb.png "Warning module")
 
 Images of the system mounted inside the laboratory:
 
 - Detection module
 
-![Solar panel with Lipo Rider Pro and battery](../imagenes/detector_paso_coches/DetectorCoches_01.jpg "Solar panel with Lipo Rider Pro and battery")
+![Solar panel with Lipo Rider Pro and battery](images/detector_paso_coches/DetectorCoches_01.jpg "Solar panel with Lipo Rider Pro and battery")
 
-![Detection module mounted on a breadboard with initial ultrasound detector](../imagenes/detector_paso_coches/DetectorCoches_02.jpg "Detection module mounted on a breadboard with initial ultrasound detector")
+![Detection module mounted on a breadboard with initial ultrasound detector](images/detector_paso_coches/DetectorCoches_02.jpg "Detection module mounted on a breadboard with initial ultrasound detector")
 
-![Detection module mounted on a breadboard with final ultrasound detector](../imagenes/detector_paso_coches/DetectorCoches_03.jpg "Detection module mounted on a breadboard with final ultrasound detector")
+![Detection module mounted on a breadboard with final ultrasound detector](images/detector_paso_coches/DetectorCoches_03.jpg "Detection module mounted on a breadboard with final ultrasound detector")
 
-![Top of the PCB detection module without connected components](../imagenes/detector_paso_coches/DetectorCoches_04.jpg "Top of the PCB detection module without connected components")
+![Top of the PCB detection module without connected components](images/detector_paso_coches/DetectorCoches_04.jpg "Top of the PCB detection module without connected components")
 
-![Top of the PCB detection module with connected components](../imagenes/detector_paso_coches/DetectorCoches_05.jpg "Top of the PCB detection module with connected components")
+![Top of the PCB detection module with connected components](images/detector_paso_coches/DetectorCoches_05.jpg "Top of the PCB detection module with connected components")
 
-![Detection module inside his waterproof case](../imagenes/detector_paso_coches/DetectorCoches_06.jpg "Detection module inside his waterproof case")
+![Detection module inside his waterproof case](images/detector_paso_coches/DetectorCoches_06.jpg "Detection module inside his waterproof case")
 
 - Warning module
 
-![Warning module mounted on a breadboard](../imagenes/detector_paso_coches/Alarma_01.jpg "Warning module mounted on a breadboard")
+![Warning module mounted on a breadboard](images/detector_paso_coches/Alarma_01.jpg "Warning module mounted on a breadboard")
 
-![Top of the PCB warning module without connected components](../imagenes/detector_paso_coches/Alarma_02.jpg "Top of the PCB warning module without connected components")
+![Top of the PCB warning module without connected components](images/detector_paso_coches/Alarma_02.jpg "Top of the PCB warning module without connected components")
 
-![Top of the PCB warning module with connected components](../imagenes/detector_paso_coches/Alarma_03.jpg "Top of the PCB warning module with connected components")
+![Top of the PCB warning module with connected components](images/detector_paso_coches/Alarma_03.jpg "Top of the PCB warning module with connected components")
 
-![Warning module inside his waterproof case](../imagenes/detector_paso_coches/Alarma_04.jpg "Warning module inside his waterproof case")
+![Warning module inside his waterproof case](images/detector_paso_coches/Alarma_04.jpg "Warning module inside his waterproof case")
 
 #### Software
 

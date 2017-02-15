@@ -15,7 +15,7 @@ Los requerimientos son los siguientes:
 - El módulo de detección está a la entrada del huerto.
 - El módulo de aviso está dentro de la casa.
 
-![Módulo de detección con placa solar](../imagenes/detector_paso_coches/Descripcion_01.jpg "Módulo de detección con placa solar")
+![Módulo de detección con placa solar](images/detector_paso_coches/Descripcion_01.jpg "Módulo de detección con placa solar")
 
 ### Instrucciones
 
@@ -46,39 +46,39 @@ El esquema en Fritzing es el siguiente:
 
 - Módulo de detección
 
-![Módulo de detección](../imagenes/detector_paso_coches/DetectorCoches_bb.png "Módulo de detección")
+![Módulo de detección](images/detector_paso_coches/DetectorCoches_bb.png "Módulo de detección")
 
 En este esquema no se ha añadido la parte de conexión al Lipo Rider Pro, la batería y la placa solar, por no tener los diseños para el Fritzing.
 
 - Módulo de aviso
 
-![Módulo de aviso](../imagenes/detector_paso_coches/Alarma_bb.png "Módulo de aviso")
+![Módulo de aviso](images/detector_paso_coches/Alarma_bb.png "Módulo de aviso")
 
 Imágenes del sistema montado dentro del laboratorio:
 
 - Módulo de detección
 
-![Placa solar con Lipo Rider Pro y batería lipo conectados](../imagenes/detector_paso_coches/DetectorCoches_01.jpg "Placa solar con Lipo Rider Pro y batería lipo conectados")
+![Placa solar con Lipo Rider Pro y batería lipo conectados](images/detector_paso_coches/DetectorCoches_01.jpg "Placa solar con Lipo Rider Pro y batería lipo conectados")
 
-![Módulo de detección montado sobre una breadboard con detector de ultrasonidos inicial](../imagenes/detector_paso_coches/DetectorCoches_02.jpg "Módulo de detección montado sobre una breadboard con detector de ultrasonidos inicial")
+![Módulo de detección montado sobre una breadboard con detector de ultrasonidos inicial](images/detector_paso_coches/DetectorCoches_02.jpg "Módulo de detección montado sobre una breadboard con detector de ultrasonidos inicial")
 
-![Módulo de detección montado sobre una breadboard con detector de ultrasonidos final](../imagenes/detector_paso_coches/DetectorCoches_03.jpg "Módulo de detección montado sobre una breadboard con detector de ultrasonidos final")
+![Módulo de detección montado sobre una breadboard con detector de ultrasonidos final](images/detector_paso_coches/DetectorCoches_03.jpg "Módulo de detección montado sobre una breadboard con detector de ultrasonidos final")
 
-![Parte superior de la PCB del módulo de detección sin componentes conectados](../imagenes/detector_paso_coches/DetectorCoches_04.jpg "Parte superior de la PCB del módulo de detección sin componentes conectados")
+![Parte superior de la PCB del módulo de detección sin componentes conectados](images/detector_paso_coches/DetectorCoches_04.jpg "Parte superior de la PCB del módulo de detección sin componentes conectados")
 
-![Parte superior de la PCB del módulo de detección con componentes conectados](../imagenes/detector_paso_coches/DetectorCoches_05.jpg "Parte superior de la PCB del módulo de detección con componentes conectados")
+![Parte superior de la PCB del módulo de detección con componentes conectados](images/detector_paso_coches/DetectorCoches_05.jpg "Parte superior de la PCB del módulo de detección con componentes conectados")
 
-![Módulo de detección dentro de su caja estanca](../imagenes/detector_paso_coches/DetectorCoches_06.jpg "Módulo de detección dentro de su caja estanca")
+![Módulo de detección dentro de su caja estanca](images/detector_paso_coches/DetectorCoches_06.jpg "Módulo de detección dentro de su caja estanca")
 
 - Módulo de aviso
 
-![Módulo de aviso montado sobre una breadboard](../imagenes/detector_paso_coches/Alarma_01.jpg "Módulo de aviso montado sobre una breadboard")
+![Módulo de aviso montado sobre una breadboard](images/detector_paso_coches/Alarma_01.jpg "Módulo de aviso montado sobre una breadboard")
 
-![Parte superior de la PCB del módulo de aviso sin componentes conectados](../imagenes/detector_paso_coches/Alarma_02.jpg "Parte superior de la PCB del módulo de aviso sin componentes conectados")
+![Parte superior de la PCB del módulo de aviso sin componentes conectados](images/detector_paso_coches/Alarma_02.jpg "Parte superior de la PCB del módulo de aviso sin componentes conectados")
 
-![Parte superior de la PCB del módulo de aviso con componentes conectados](../imagenes/detector_paso_coches/Alarma_03.jpg "Parte superior de la PCB del módulo de aviso con componentes conectados")
+![Parte superior de la PCB del módulo de aviso con componentes conectados](images/detector_paso_coches/Alarma_03.jpg "Parte superior de la PCB del módulo de aviso con componentes conectados")
 
-![Módulo de aviso dentro de su caja estanca](../imagenes/detector_paso_coches/Alarma_04.jpg "Módulo de aviso dentro de su caja estanca")
+![Módulo de aviso dentro de su caja estanca](images/detector_paso_coches/Alarma_04.jpg "Módulo de aviso dentro de su caja estanca")
 
 #### Software
 
