@@ -2,7 +2,7 @@
 
 ### Finalidad de artículo
 
-La finalidad de este artículo es ampliar la información sobre el estado de la cubietruck que [creé anteriormente](../2014/informacion_sobre_temperatura_y_discos_duros_en_la_cubietruck_cubieboard_3.md) y ampliar la información a mostrar en la web generada en el [artículo anterior](../2015/web_con_informacion_sobre_temperatura_y_discos_duros_en_la_cubietruck_cubieboard_3.md).
+La finalidad de este artículo es ampliar la información sobre el estado de la cubietruck que [creé anteriormente](#2014_03) y ampliar la información a mostrar en la web generada en el [artículo anterior](#2015_06).
 
 ### Nuevos comandos instalados
 

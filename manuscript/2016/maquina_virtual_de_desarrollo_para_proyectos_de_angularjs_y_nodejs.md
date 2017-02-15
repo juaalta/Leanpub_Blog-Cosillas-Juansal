@@ -219,7 +219,7 @@ sudo /opt/smartgit/bin/add-menuitem.sh
 
 ##### Información adicional:
 
-http://tutorialforlinux.com/2014/12/10/how-to-install-smartgit-client-on-fedora-32-64bit-linux/
+http://tutorialforlinux.com/2014/12/10/how-to-install-smartgit-client-on-fedora-32-64bit-linux/  
 http://tutorialforlinux.com/2014/12/10/how-to-create-a-smartgit-linux-desktop-menu-launcher-easy-guide/
 
 ### Instalación de AngularJS y NodeJS
@@ -229,8 +229,8 @@ http://tutorialforlinux.com/2014/12/10/how-to-create-a-smartgit-linux-desktop-me
 No requiere instalación.
 
 ##### Información adicional
-https://angularjs.org/
-https://carlosazaustre.es/blog/empezando-con-angular-js/
+https://angularjs.org/  
+https://carlosazaustre.es/blog/empezando-con-angular-js/  
 https://carlosazaustre.es/blog/tutorial-ejemplo-de-aplicacion-web-con-angular-js-y-api-rest-con-node/
 
 #### NodeJS

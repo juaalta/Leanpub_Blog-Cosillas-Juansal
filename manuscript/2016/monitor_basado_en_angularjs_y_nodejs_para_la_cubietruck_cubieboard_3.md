@@ -2,9 +2,9 @@
 
 ### Finalidad del artículo
 
-La finalidad de este artículo es mostrar de forma gráfica e intuitiva la información mostrada en el [anterior artículo sobre la Cubietruck](../2015/web_con_informacion_sobre_temperatura_y_discos_duros_en_la_cubietruck_cubieboard_3.md).  
+La finalidad de este artículo es mostrar de forma gráfica e intuitiva la información mostrada en el [anterior artículo sobre la Cubietruck](#2015_06).  
 Para ello he creado una web con AngularJS atacando a servicios REST hechos con NodeJS. Para mejorar la parte gráfica he utilizado una plantilla web gratuita llamada [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html).  
-El desarrollo de la página y de los servicios REST los he realizado utilizando la [máquina virtual](../2016/maquina_virtual_de_desarrollo_para_proyectos_de_angularjs_y_nodejs.md) que he creado para tal efecto.
+El desarrollo de la página y de los servicios REST los he realizado utilizando la [máquina virtual](#2016_04) que he creado para tal efecto.
 
 ### Software instalado en la Cubieboard
 
