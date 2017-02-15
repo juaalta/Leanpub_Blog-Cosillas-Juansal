@@ -1,6 +1,6 @@
-# Sistema de detección de paso por un camino con Arduino {#2017_01}
+## Sistema de detección de paso por un camino con Arduino {#2017_01}
 
-## Descripción
+### Descripción
 
 La finalidad del proyecto es detectar el paso de coches y personas a la entrada de un huerto y avisar con una señal sonora dentro de la casa de este.  
 Por esto este proyecto está compuesto por 2 módulos:
@@ -17,9 +17,9 @@ Los requerimientos son los siguientes:
 
 ![Módulo de detección con placa solar](../imagenes/detector_paso_coches/Descripcion_01.jpg "Módulo de detección con placa solar")
 
-## Instrucciones
+### Instrucciones
 
-### Componentes usados
+#### Componentes usados
 
 Los componentes usados han sido, por módulo:
 
@@ -40,7 +40,7 @@ Los componentes usados han sido, por módulo:
 
 
 
-### Montaje del circuito
+#### Montaje del circuito
 
 El esquema en Fritzing es el siguiente:
 
@@ -80,7 +80,7 @@ Imágenes del sistema montado dentro del laboratorio:
 
 ![Módulo de aviso dentro de su caja estanca](../imagenes/detector_paso_coches/Alarma_04.jpg "Módulo de aviso dentro de su caja estanca")
 
-### Software
+#### Software
 
 Las librerías usadas han sido:
 

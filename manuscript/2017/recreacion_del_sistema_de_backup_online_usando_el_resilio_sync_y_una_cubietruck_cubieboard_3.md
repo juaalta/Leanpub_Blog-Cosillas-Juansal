@@ -1,12 +1,12 @@
-# Recreacion del sistema de backup online usando el Resilio Sync y una Cubietruck (Cubieboard 3) {#2017_03}
+## Recreacion del sistema de backup online usando el Resilio Sync y una Cubietruck (Cubieboard 3) {#2017_03}
 
-## Finalidad del artículo
+### Finalidad del artículo
 
 La finalidad inicial del artículo ha sido la de cómo actualizar el linux de la Cubietruck y después migrar de Bittorrent Sync a Resilio Sync, pero por descuido no he creado una copia de seguridad de la tarjeta y actualizando el linux éste ha dejado de funcionar. Por tanto el artículo he tenido que cambiarlo de una actualización y migración a una creación total de la máquina desde cero, pero en este caso he añadido, además del Resilio Sync, el monitor creado con AngularJs y NodeJs para controlar la máquina.
 
 Por si a alguien le interesa y desea intentar actualizar el linux indico a continuación los pasos que he seguido, hasta que me ha fallado, pero le recomiendo encarecidamente que haga una copia de seguridad de la tarjeta por si acaso le pasa lo mismo que a mí.
 
-### Actualización del linux:
+#### Actualización del linux:
 
 Antes que nada indicar que hace tiempo pude hacer una actualización del sistema operativo y ejecuté los siguientes pasos:
 
@@ -93,24 +93,24 @@ apt update
 apt dist-upgrade
 ```
 
-## Consideraciones iniciales sobre el artículo
+### Consideraciones iniciales sobre el artículo
 
 En este artículo se detallan los pasos seguidos para instalar el Lubuntu Server en una Cubietruck (Cubieboard 3) y el Resilio Sync.  
 Los pasos detallados son los que yo he seguido y que a mí me han funcionado.  
 En mi caso en la tarjeta SD está el sistema operativo y las aplicaciones, en el disco duro sólo se encuentran los ficheros del BitTorrent Sync.  
 He aprovechado para instalar el Linaro Server y no el Linaro, como tenía la máquina anterior, de esta forma he conseguido que ocupe menos en la tarjeta sd.
 
-## Instalación del sistema operativo en la SD
+### Instalación del sistema operativo en la SD
 
 Desde su [página oficial](http://cubieboard.org) y partir de esta ruta [Home › Model › cubieboard3(cubietruck)](http://cubieboard.org/model/cb3/) he descargado la siguiente imagen: [linaro-server-ct-card0-hdmi&vga-v1.0.img.7z](http://dl.cubieboard.org/model/CubieBoard3/Image/Linaro-server/linaro-server-ct-card0-hdmi&vga-v1.0.img.7z)
 
 Después de descargarla la he grabado en la tarjeta SD.
 
-##  Configuración del sistema operativo
+###  Configuración del sistema operativo
 
 Para la configuración del sistema operativo he seguido los siguientes pasos.
 
-### Configuración del teclado en español:
+#### Configuración del teclado en español:
 
 Para esto ejecutamos el siguiente comando:
 
@@ -121,11 +121,11 @@ sudo dpkg-reconfigure keyboard-configuration
 Este comando se encarga de lanzar la aplicación de reconfiguración del teclado.
 Seleccionamos **Generic 105 key (Intl PC)**, el idioma **Spanish** y luego las opciones predeterminadas con **OK**.
 
-### Configuración de red:
+#### Configuración de red:
 
 En mi caso no la he tocado, ya que uso el DHCP, que es la configuración que viene por defecto.
 
-### Configuración de la zona horaria:
+#### Configuración de la zona horaria:
 
 Para esto ejecutamos el siguiente comando:
 
@@ -136,7 +136,7 @@ sudo dpkg-reconfigure tzdata
 Este comando se encarga de lanzar la aplicación de reconfiguración de la zona horaria.
 Seleccionamos la zona geográfica **Europe** y la zona horaria **Madrid**.
 
-### Cambio del nombre a la cubieboard:
+#### Cambio del nombre a la cubieboard:
 
 Para esto tenemos que crear/modificar el fichero **/etc/hosts** y añadir el nombre que deseemos que tenga la cubieboard.
 Para ello ejecutaremos el siguiente comando:
@@ -164,7 +164,7 @@ Cambiando el nombre que allí se encuentra por el de la máquina:
 CUBIEBOARD
 ```
 
-###  Montado del disco duro:
+####  Montado del disco duro:
 En mi caso el disco duro es **/dev/sda1**.  
 El disco duro se va a montar sobre la carpeta **/media/hdd**.  
 Para montar el disco duro y que la configuración se guarde entre arranques del sistema operativo se ha de modificar el fichero **/etc/fstab**, usando el siguiente comando:
@@ -179,7 +179,7 @@ Para ello añadiremos la siguiente línea a dicho fichero.
 /dev/sda1 /media/hdd ext4 defaults 0 2
 ```
 
-### Actualización del sistema operativo
+#### Actualización del sistema operativo
 
 Para actualizar los paquetes del sistema operativo se han ejecutado los siguientes comandos:
 
@@ -189,11 +189,11 @@ sudo apt-get upgrade
 ```
 
 
-## Instalación de Resilio Sync
+### Instalación de Resilio Sync
 
 Para instalar el programa desde **apt-get**, he seguido la información del siguiente enlace: https://www.resilio.com/blog/official-linux-packages-for-sync-now-available
 
-### Preparación del repositorio
+#### Preparación del repositorio
 
 Para preparar el repositorio se crea el fichero **/etc/apt/sources.list.d/resilio-sync.list**, ejecutando el siguiente comando:
 
@@ -207,7 +207,7 @@ Se añade la siguiente linea:
 wget -qO - https://linux-packages.resilio.com/resilio-sync/key.asc | sudo apt-key add -
 ```
 
-### Instalación
+#### Instalación
 
 Para instalar la aplicación se ejecuta el siguiente comando.
 
@@ -216,7 +216,7 @@ sudo apt-get update
 sudo apt-get install resilio-sync
 ```
 
-### Configuración
+#### Configuración
 
 Para configurar el Resilio Sync y poder aprovechar lo que ya tenía del Bittorrent Sync he realizado los siguientes pasos:
 
@@ -259,7 +259,7 @@ vi /etc/resilio-sync/config.json
 y descomentamos las líneas que contengan **device_name** y **storage_path** si estaban comentadas en el fichero.
 
 
-### Uso datos anteriores de BitTorrnent Sync
+#### Uso datos anteriores de BitTorrnent Sync
 
 Para que pueda tener acceso al disco duro anterior hay que cambiar que el usuario que arranca el servicio, en nuestro caso es root y no rslsync, para ello hay que modificar el fichero /etc/init.d/resilio-sync.
 
@@ -298,21 +298,21 @@ Después de esto ya podemos reiniciar la cubietruck.
 sudo shutdown -h 0
 ```
 
-#### Información adicional
+##### Información adicional
 
 [Pasos seguidos para crear un sistema de backup online usando el BitTorrent y una Cubietruck (Cubieboard 3)](#2014_02)  
 [Upgrade on dekstops (BitTorrent Sync -> Resilio Sync) ](https://help.getsync.com/hc/en-us/articles/211928186-Upgrade-on-dekstops-BitTorrent-Sync-Resilio-Sync-)  
 [Official Linux Packages for Sync Now Available](https://www.resilio.com/blog/official-linux-packages-for-sync-now-available)  
 
 
-## Instalación del monitor basado en AngularJs y NodeJs
+### Instalación del monitor basado en AngularJs y NodeJs
 
 Basándome en el siguiente artículo [Monitor basado en AngularJs y NodeJs para la Cubietruck (Cubieboard 3)](#2016_05) he instalado el monitor.
 
 
-###  Software instalado
+####  Software instalado
 
-#### Git
+##### Git
 
 Este es el cliente usado para descargar la web desde github.
 Para la instalación he ejecutado los siguientes comandos:
@@ -321,7 +321,7 @@ Para la instalación he ejecutado los siguientes comandos:
 sudo apt-get install git
 ```
 
-#### NodeJS
+##### NodeJS
 
 Para la instalación de NodeJS he elegido la última versión (en el momento de escribir el artículo es la 6.x) y he ejecutado los siguientes comandos:
 
@@ -331,13 +331,13 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-##### Información adicional
+###### Información adicional
 
 [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
-###  Librerías adicionales que he instalado en la Cubieboard para poder realizar la monitorización
+####  Librerías adicionales que he instalado en la Cubieboard para poder realizar la monitorización
 
-#### lm-sensors
+##### lm-sensors
 
 Para poder detectar la temperatura de la CPU he usado la herramienta lm-sensors.
 Los pasos que he seguido para instalarla han sido los siguientes:
@@ -355,12 +355,12 @@ sudo sensors-detect
 sudo service kmod start
 ```
 
-##### Información adicional
+###### Información adicional
 [lm-sensors](http://www.lm-sensors.org/)  
 [Repositorio Github](https://github.com/groeck/lm-sensors)  
 [How do I get the CPU temperature?](http://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature)
 
-####  smartmontools
+#####  smartmontools
 
 Para obtener la información de los discos se puede utiliar el paquete smartmontools:
 
@@ -368,7 +368,7 @@ Para obtener la información de los discos se puede utiliar el paquete smartmont
 apt-get install smartmontools
 ```
 
-####  hddtemp
+#####  hddtemp
 
 Para obtener la información de los discos se puede utilizar el paquete hddtemp:
 
@@ -378,9 +378,9 @@ apt-get install hddtemp
 
 
 
-## Instalación de la web de monitorización
+### Instalación de la web de monitorización
 
-### Instalación de la web
+#### Instalación de la web
 
 Los pasos para instalar el proyecto en la Cubieboard son los siguientes:
 

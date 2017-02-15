@@ -1,6 +1,6 @@
-# Step detection system by a way with Arduino {#2017_02}
+## Step detection system by a way with Arduino {#2017_02}
 
-## Description
+### Description
 
 The purpose of the project is to detect the passing of cars and people at the entrance to an orchard and a warning beep inside this house.  
 For this project it consists of 2 modules:
@@ -17,9 +17,9 @@ The requirements are:
 
 ![Detection module with solar panel](../imagenes/detector_paso_coches/Descripcion_01.jpg "Detection module with solar panel")
 
-## Instructions
+### Instructions
 
-### Components used
+#### Components used
 
 The components used have been:
 
@@ -38,7 +38,7 @@ The components used have been:
  - [Ultrasonic Module Distance Measuring Transducer Sensor Waterproof JSN-SR04T](http://www.ebay.es/itm/272041782549?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT)
  - Passive buzzer / relay.
 
-### Assembly of the circuit
+#### Assembly of the circuit
 
 The Fritzing scheme is as follows:
 
@@ -78,7 +78,7 @@ Images of the system mounted inside the laboratory:
 
 ![Warning module inside his waterproof case](../imagenes/detector_paso_coches/Alarma_04.jpg "Warning module inside his waterproof case")
 
-### Software
+#### Software
 
 The libraries used have been:
 
