@@ -1,31 +1,32 @@
 ## Plugins de navegadores {#secciones_adicionales_02}
 
-### Plugins de Firefox
+## Plugins de Firefox
 
-Los plugins desarrollados son:
+### Plugins desarrollados
+
+Estos son:
 
 #### Icono blog Cosillas de Juansal
 
 Muestra un icono que despliega un menú para acceder a las secciones del blog.
 
-[Web Addons de firefox](https://addons.mozilla.org/en-US/firefox/addon/icono-blog-cosillas-de-juan/)
-
+[Web Addons de firefox](https://addons.mozilla.org/en-US/firefox/addon/icono-blog-cosillas-de-juan/)  
 [Repositorio de github con el código](https://github.com/juaalta/firefox-addon-icono-blog)
 
 
-### Plugins de Chrome
+## Plugins de Chrome
+### Plugins desarrollados
 
-Los plugins desarrollados son:
+Estos son:
 
 #### Icono blog Cosillas de Juansal
 
 Muestra un icono que despliega un menú para acceder a las secciones del blog.
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/icono-blog-cosillas-de-ju/gkmkpgbnpbgegbiaochjcjpcdkcheoaa?utm_source=chrome-ntp-icon)
-
+[Chrome Web Store](https://chrome.google.com/webstore/detail/icono-blog-cosillas-de-ju/gkmkpgbnpbgegbiaochjcjpcdkcheoaa?utm_source=chrome-ntp-icon)  
 [Repositorio de github con el código](https://github.com/juaalta/chrome-addon-icono-blog)
 
 
-### Perfiles públicos
+## Perfiles públicos
 
 Mi perfil público en la web de addons de Mozilla se puede ver en la siguiente URL: [Perfil público pagina Addons](https://addons.mozilla.org/en-US/firefox/user/96159/).
