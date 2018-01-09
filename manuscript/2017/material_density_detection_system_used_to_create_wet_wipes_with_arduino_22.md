@@ -85,25 +85,24 @@ Each of the bars is responsible for one or several features and the Industruino 
 For communication between the bars, the following messaging protocol was designed:
 
 * Requests from the Industruino
- 1. Request current bar configuration.
+ - Request current bar configuration.
  
 ![esquema_01_01](images/medicion_densidad/esquema_01_01.en.png)
 
- 2. Configuration data for the bar (data modified in Industruino and sent to the bars).
+ - Configuration data for the bar (data modified in Industruino and sent to the bars).
  
 ![esquema_01_02](images/medicion_densidad/esquema_01_02.en.png)
 
- 3. Auto calibration request bar.
+ - Auto calibration request bar.
  
 ![esquema_01_03](images/medicion_densidad/esquema_01_03.en.png)
 
 * Shipments to the Industruino, independent of the previous ones in response to a request of this one
-
- 1. Sending information auto calibrated (the first start of the bar always performs a self calibration without being prompted by the Industruino)
+ - Sending information auto calibrated (the first start of the bar always performs a self calibration without being prompted by the Industruino)
  
 ![esquema_02_01](images/medicion_densidad/esquema_02_01.en.png)
 
- 2. Sending data about the readings. It is only sent when there is a change between in or out of range.
+ - Sending data about the readings. It is only sent when there is a change between in or out of range.
  
 ![esquema_02_02](images/medicion_densidad/esquema_02_02.en.png)
 
