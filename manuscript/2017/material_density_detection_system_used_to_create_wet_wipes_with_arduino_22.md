@@ -310,7 +310,7 @@ The files that make up this project / program are:
 * **datos_densidad.ino:** This file contains the data structures with the information of the density bar and the management of these.
 * **datos_LDR.ino:** This file contains the configuration management and data access of the LDRs, additionally when it obtains the data of the LDRs it processes them.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+They can be consulted and obtained from the following URL of the Arduino Create website: <https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview>
 
 
 ##### Communication bar
@@ -323,7 +323,7 @@ The files that make up this project / program are:
  * Declaration of data structures internal to the program.
 * **datos_densidad.ino:** This file contains the data structures with the information of the density bar and the management of these.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/000576a7-42f4-4b74-bb22-ea69ef1e2e21/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+They can be consulted and obtained from the following URL of the Arduino Create website: <https://create.arduino.cc/editor/juaalta/000576a7-42f4-4b74-bb22-ea69ef1e2e21/preview>
 
 
 ##### Industruino
@@ -339,7 +339,7 @@ The files that make up this project / program are:
 * **Industruino_Pantalla.ino:** This file contains the management of the screen.
 * **Industruino_datos.ino:** This file contains the management of received and sent data.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/7aaf80e0-d9bd-4757-94cd-27b26e6f5ace/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+They can be consulted and obtained from the following URL of the Arduino Create website: <https://create.arduino.cc/editor/juaalta/7aaf80e0-d9bd-4757-94cd-27b26e6f5ace/preview>
 
 
 ##### Arduino with screen
@@ -356,7 +356,7 @@ The files that make up this project / program are:
 * **Pantalla.ino:** This file contains the management of the screen.
 * **gestion_datos.ino:** This file contains the management of received and sent data.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+They can be consulted and obtained from the following URL of the Arduino Create website: <https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview>
 
 
 ### Acknowledgments

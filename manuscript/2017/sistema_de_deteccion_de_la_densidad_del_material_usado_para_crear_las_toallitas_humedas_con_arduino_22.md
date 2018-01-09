@@ -310,7 +310,7 @@ Los ficheros que componen este proyecto/programa son:
 * **datos_densidad.ino:** Este fichero contiene las estructuras de datos con la información de la barra de densidad y la gestión de estas.
 * **datos_LDR.ino:** Este fichero contiene la gestión de configuración y acceso a datos de los LDRs, adicionalmente cuando obtiene los datos de los LDRs los procesa.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+Pueden consultarse y obtenerse desde la siguiente url de la web de Arduino Create: <https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview>
 
 
 ##### Barra de comunicaciones
@@ -323,7 +323,7 @@ Los ficheros que componen este proyecto/programa son:
  * Declaración de estructuras de datos internas al programa.
 * **datos_densidad.ino:** Este fichero contiene las estructuras de datos con la información de la barra de densidad y la gestión de estas.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/000576a7-42f4-4b74-bb22-ea69ef1e2e21/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+Pueden consultarse y obtenerse desde la siguiente url de la web de Arduino Create: <https://create.arduino.cc/editor/juaalta/000576a7-42f4-4b74-bb22-ea69ef1e2e21/preview>
 
 
 ##### Industruino
@@ -339,7 +339,7 @@ Los ficheros que componen este proyecto/programa son:
 * **Industruino_Pantalla.ino:** Este fichero contiene la gestión de la pantalla.
 * **Industruino_datos.ino:** Este fichero contiene la gestión de los datos recibidos y a enviar.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/7aaf80e0-d9bd-4757-94cd-27b26e6f5ace/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+Pueden consultarse y obtenerse desde la siguiente url de la web de Arduino Create: <https://create.arduino.cc/editor/juaalta/7aaf80e0-d9bd-4757-94cd-27b26e6f5ace/preview>
 
 
 ##### Arduino con pantalla
@@ -356,7 +356,7 @@ Los ficheros que componen este proyecto/programa son:
 * Pantalla.ino: Este fichero contiene la gestión de la pantalla.
 * gestion_datos.ino: Este fichero contiene la gestión de los datos recibidos y a enviar.
 
-<iframe src="https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview?embed" style="height:510px;width:100%;margin:10px 0" frameborder="0"></iframe>
+Pueden consultarse y obtenerse desde la siguiente url de la web de Arduino Create: <https://create.arduino.cc/editor/juaalta/f1582038-8bc2-4954-b314-7a588bcfdb62/preview>
 
 
 ### Agradecimientos
