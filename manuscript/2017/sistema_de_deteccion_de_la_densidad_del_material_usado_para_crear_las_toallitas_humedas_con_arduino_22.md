@@ -86,15 +86,24 @@ Para la comunicación entre las barras se diseñó el siguiente protocolo de men
 
 * Peticiones desde el Industruino
  1. Petición de configuración actual de barra.
+ 
 ![esquema_01_01](images/medicion_densidad/esquema_01_01.es.png)
+
  2. Datos de reconfiguración para la barra (datos modificados en Industruino y enviados a las barras).
+
 ![esquema_01_02](images/medicion_densidad/esquema_01_02.es.png)
+
  3. Petición de auto calibrado de barra.
 ![esquema_01_03](images/medicion_densidad/esquema_01_03.es.png)
+
 * Envíos al Industruino, independientes a los anteriores como respuesta a una petición de éste
+
  1. Envío de información de auto calibrado (el primer arranque de la barra siempre realiza un auto calibrado, sin que se lo pida el Industruino)
+ 
 ![esquema_02_01](images/medicion_densidad/esquema_02_01.es.png)
+
  2. Envío de datos sobre las lecturas. Sólo se envía cuando hay un cambio entre dentro o fuera del rango.
+ 
 ![esquema_02_02](images/medicion_densidad/esquema_02_02.es.png)
 
 
